@@ -1,8 +1,8 @@
 # AngularJS-UGAT
 
-# "Ultimate Guidebook for Automated Testing"
+## "Ultimate Guidebook for Automated Testing"
  
-# AngularJS 1.X Guide
+### AngularJS 1.X Guide
 
 Looking for Angular-UGAT, React-UGAT, or Java-UGAT?
 
