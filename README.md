@@ -8,31 +8,27 @@ Looking for Angular-UGAT, React-UGAT, or Java-UGAT?
 
 
 Table of Contents
-  - [Part 1: Intro to the UGAT](#Intro to the UGAT Series)
-  - [History of the Testing Triplex](#history)
-  - [Purpose of The Testing Triplex](#Purpose of The Testing Triplex)
+  - [Part 1: Intro to UGAT](#Intro to UGAT)
+  - [History of UGAT](#history)
+  - [Purpose of UGAT](#Purpose of UGAT)
+  - [Contributing to UGAT](#Contributing to UGAT)
   - [It's Not Specific To AngularJS](#It's Not Specific To Angular)
-  - [This is a Guide for Developing Software](#This is a Guide)
+  - [This is a Guide](#This is a Guide)
   - [Is This Yet Another Interpretation of "Agile"?](#Is This Yet Another Interpretation of Agile?)
-  - [Perfect Code Over Time Is Attainable](#Perfect Code Over Time Is Attainable)
+  - [Believe That Perfect Code Over Time Is Attainable](#Believe That Perfect Code Over Time Is Attainable)
   - [Can Testing Show An Absence of Defects?](#Can Testing Show An Absence of Defects)
-Part 2: The Two Core Types of Automated Tests in AngularJS
+  - [It Takes Discipline; a LOT of It](#It Takes Discipline; a LOT of It)
 
-Part 3: Cucumberizing Your Tests
+  - [Part 2: The Two Core Types of Automated Tests in AngularJS](#The Two Core Types of Automated Tests)
+    - [Web / UI Tests](#Web / UI Tests)
+    - Unit Tests (#Unit Tests)
+    
+  - [Part 3: Acceptance Tests](#Acceptance Tests) 
+    - [What Are Acceptance Tests](#What Are Acceptance Tests)
+    - [Cucumberizing Your Tests](#Cucumberizing Your Tests)
+    - [BDD Without Cucumber](#BDD Without Cucumber)
 
-
-
----
-
-Table of Contents
-  - [Part 1: Intro to The Testing Triplex](#Intro to The Testing Triplex)
-    - [History of the Testing Triplex](#history)
-    - [Purpose of The Testing Triplex](#Purpose of The Testing Triplex)
-    - [It's Not Specific To Angular](#It's Not Specific To Angular)
-    - [This is a Guide for Developing Software](#This is a Guide)
-    - [Is This Yet Another Interpretation of "Agile"?](#Is This Yet Another Interpretation of Agile?)
-    - [Perfect Code Over Time Is Attainable](#Perfect Code Over Time Is Attainable)
-  - [Part 2: The Three Types of Automated Tests](#The Three Types of Automated Tests)
+  
     - [Overview of the Three Parts](#Overview of the Three Parts)
     - [The Triplex Diagram](#The Triplex Diagram)
     - [Acceptance Tests](#Acceptance Tests)
@@ -45,7 +41,7 @@ Table of Contents
     - [Unit Tests](#Unit Tests)
       - A Unit Test Example
       - Running Unit Tests
-  - [Part 3: The Testing Triplex in Practice](#The Triplex in Practice)
+  - [Part 4: The Testing Triplex in Practice](#The Triplex in Practice)
     - [Where Do I Put My Files?](#Where Do I Put My Files)
     - [The Gherkin Comes First](#The Gherkin Comes First)
     - [Executing The Gherkin Scripts](#Executing The Gherkin Scripts)
@@ -61,19 +57,20 @@ Table of Contents
     - [Everyone Reads the Gherkin, Dev's Change the Gherkin](#Everyone Reads, Devs Change)
     - [No Manual Testers](#No Manual Testers)
     - [The BAU Handoff](#The BAU Handoff)
-    - [The Three Deliverables](#The Three Deliverables)
-  - [Part 4: Additional Benefits of Triplex Development](#Additional Benefits of Triplex Development)
+    - [Working Effectively with Non-Cucumberized Tests](#Working Effectively with Non-Cucumberized Tests)
+    - [The Deliverables](#The Three Deliverables)
+  - [Part 5: Additional Benefits of Triplex Development](#Additional Benefits of Triplex Development)
     - [Better Team Communication and Ubiquitous Language](#Better Team Communication and Ubiquitous Language)
     - [The Requirements and Code Are Always In Sync](#The Requirements and Code Are Always In Sync)
     - [Minimize Manual Testing](#Minimize Manual Testing)
     - [Living Documentation](#Living Documentation)
-  - [Part 5: Reporting](#Reporting)
+  - [Part 6: Reporting](#Reporting)
     - [Generating Reports From the Codebase](#Generating Reports From the Codebase)
     - [Meetings with "The Boss"](#Meetings with The Boss)
     - [Sample Reports](#Sample Reports)
-  - [Part 6: Official Triplex Projects](#Official Triplex Projects)
+  - [Part 7: Official Triplex Projects](#Official Triplex Projects)
     - [NG-NJ](#NG-NJ)
-  - [Part 7: Closing Thoughts](#Closing Thoughts)
+  - [Part 8: Closing Thoughts](#Closing Thoughts)
     - [The Mythical "Fourth Plex"](#The Mythical Fourth Plex)
     - [Laid Back Perfectionism](#Laid Back Perfectionism)
     - [Why "Test Your Own Code" Is a Terrible Policy](#Why Test Your Own Code Is a Terrible Policy)
@@ -86,7 +83,7 @@ Table of Contents
     - [The Importance of Having Conversations](#The Importance of Having Conversations)
     - [How Could It Not Be Perfect?](#How Could It Not Be Perfect?)
     - [Triplex Tester Certification](#Triplex Tester Certification)
-  - [Part 8: Frequently Asked Questions](#FAQ)
+  - [Part 9: Frequently Asked Questions](#FAQ)
     - [Q1. Is it wrong to treat low level step definitions like unit tests?](#Q1)
     - [Q2. Do I *need* to use acceptance tests?](#Q2)
     - [Q3. Do I *need* to use unit tests?](#Q3)
@@ -96,12 +93,13 @@ Table of Contents
     - [Q7. My boss says we don't have enough time for testing. What should I do?](#Q7)
     - [Q8. Q8. Can't we just manually test everything?](#Q8)
     - [Q9. Will the theory of Triplex Testing work for [insert favorite platform here]?](#Q9)
-  - [Part 9: Works Cited](#Works Cited)
+  - [Part 10: Works Cited](#Works Cited)
+  - [Part 11: Credits](#Credits)
 
 
 
-<div name="Intro to the UGAT"></div>
-## Part 1: Intro to the UGAT
+<div name="Intro to UGAT"></div>
+## Part 1: Intro to UGAT
 ---
 <div name="history"></div>
 ### History of UGAT
@@ -149,13 +147,13 @@ Software is an interesting thing in that it needs to be 100% perfect or else it 
 ## Part 2: The Three Types of Automated Tests
 
 
- <div name="The Two Core Types of Automated Tests"></div>
+ <div name="The Two Core Types of Automated Tests in AngularJS"></div>
 ### The Two Core Types of Automated Tests
 Automated testing for most AngularJs apps fall into one of two categories: unit testing or web/ui testing. 
 
 
 
-<div name="E2e Tests"></div>
+<div name="Web / UI Tests"></div>
 ### E2e Tests
 <img src="./images/karma.png" height="50"><img src="./images/protractor.png" height="50"> <img src="./images/mocha-chai.png" height="50">
 
@@ -168,16 +166,18 @@ These are tests that do hit external endpoints. Normally, we set these up in a s
 Ahh, the unit tests. Incorporating heavy Protractor usage for E2e and acceptance tests should not steal any thunder at all from the classic unit tests. Indeed, doing all that preparatory Protractor work and writing out the features in gherkin, makes it much easier to start unit testing because you have a clear direction of where you want to be. Unit tests are concerned with checking individual functions. These normally return a coverage report, and as always we aim for 100% coverage by unit tests. 
 
 
+
+<div name="Unit Tests"></div>
 Part 3: Acceptance Tests
 
 ### What Are Acceptance Tests
-
+TODO
 
 ### Cucumberizing Your Tests
-
+TODO
 
 ### BDD Without "Going All the Way"
-
+TODO
 
 --- 
 <div name="The Triplex in Practice"></div>
@@ -421,13 +421,20 @@ Too often large development companies have qa teams that are just squads of manu
 Let's be honest. Teams that can practice Triplex Testing well and can build perfect software quickly are best utlized to do just that- *to build.* At some point in any project (possibly years after it has been started), at some point there are no more bugs to fix and no more features to add. However, we cannot just completely abandon our software out in the wild. Things change and break and need to maintained, and *somebody* needs to do it. These developers are referred to as the *Business As Usual*, or BAU, team. The [agile manifesto](#) clearly values, "Working software over comprehensive documentation". The great thing about Triplex Testing is that you need to focus only on working software (and writing working test code). By the automated generation of reports, especially the cucumber reports, the BAU team has available to them a very comprehensive and easy to read for of ducomentation for what the code should do! I also recommend writing a relatively detailed README file for each project, at the very least describing how the project was scaffolded and what task runner scripts are available.
 
 
-<div name="The Three Deliverables"></div>
-### The Three Deliverables
-When practicing Triplex Testing well there will be many deliverables, but we can put them into three high level groups:
+
+<div name="Working Effectively with Non-Cucumberized Tests"></div>
+### Working Effectively with Non-Cucumberized Tests
+TODO
+
+
+<div name="The Deliverables"></div>
+### The Deliverables
+When practicing UGAT development well there will be many deliverables, but we can put them into three high level groups:
 
 - Clean Build: The final, minified files ready to be hosted live to the users.
 - Source Code: The raw project, able to be picked up and continued by any developer at any time in the future.
 - Tests: You will have at least three configuration files for running tests, the actual files themselves full of the test code, and the reports generated from each of the three test types. 
+- Test Reports: 
 
 The important thing to note here is that any developer can provide the first two deliverables, but it's the last one that is really the crux of Triplex Testing and provides the most value in the long run. Put a lot of effort into making your automated tests a nice deliverable. You'll be glad you did!
 
