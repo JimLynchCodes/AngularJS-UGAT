@@ -59,6 +59,7 @@ Table of Contents
     - [The BAU Handoff](#The BAU Handoff)
     - [Working Effectively with Non-Cucumberized Tests](#Working Effectively with Non-Cucumberized Tests)
     - [The Deliverables](#The Three Deliverables)
+    - [Automating Testing is Recognising and Applying Patterns](#Automating Testing is Recognising and Applying Patterns)
   - [Part 5: Additional Benefits of Triplex Development](#Additional Benefits of Triplex Development)
     - [Better Team Communication and Ubiquitous Language](#Better Team Communication and Ubiquitous Language)
     - [The Requirements and Code Are Always In Sync](#The Requirements and Code Are Always In Sync)
@@ -440,8 +441,8 @@ The important thing to note here is that any developer can provide the first two
 
 ---
 
-<div name="Writing Tests as Recognising and Applying Patterns"></div>
-### Writing Tests as Recognising and Applying Patterns
+<div name="Automating Testing is Recognising and Applying Patterns"></div>
+### Automating Testing is Recognising and Applying Patterns
 
 
 
