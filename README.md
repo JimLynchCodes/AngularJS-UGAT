@@ -1,6 +1,8 @@
 # AngularJS UGAT 
 
 ## "Ultimate Guidebook for Automated Testing"
+
+A guide for leveraging acceptance, unit, and ui/e2e tests to build valueable software and increase developer accuracy, speed, confidence, and serenity. 
  
 ### For AngularJS 1.X Projects.
 
