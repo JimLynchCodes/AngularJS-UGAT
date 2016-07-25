@@ -15,8 +15,7 @@ Table of Contents
   - [This is a Guide for Developing Software](#This is a Guide)
   - [Is This Yet Another Interpretation of "Agile"?](#Is This Yet Another Interpretation of Agile?)
   - [Perfect Code Over Time Is Attainable](#Perfect Code Over Time Is Attainable)
-  - No Amount of Testing Can prove no bugs from ISTQB, "Testing can shows the presence of defects: Testing can show that defects are present, but cannot prove that there are no defects". Since you could always be "missing one test" that *would* fail because of the bug in the system. If you can show that you have covered all situatinos with tests (a somewhat impossible goal) *and* all of those tests are passing then you can indeed be certain that that the software is absent of bugs. It's sort of a cop-out answer though, since the next question is, "well how do we know if we are missing certain tests?". Sometimes you can't foresee them, and you retrospectively write the tests to expose the bugs, but sometimes the missing or incorrect tests stem frmo not fully understand the requirements in the first place. 
-
+  - [Can Testing Show An Absence of Defects?](#Can Testing Show An Absence of Defects)
 Part 2: The Two Core Types of Automated Tests in AngularJS
 
 Part 3: Cucumberizing Your Tests
@@ -141,9 +140,48 @@ This question here is whether the ideas in UGAT are really just another interpre
 ### Believe That  Perfect Code Over Time Is Attainable
 Software is an interesting thing in that it needs to be 100% perfect or else it doesn't work, everything breaks, and the users are disgusted! Although some bugs go unnoticed or are "acceptable risks", often any bug found is an issue and needs to be addressed at some point, sometimes immediately. Because of this level of perfection that is inherently needed, it would be wise to treat any software project that plans to go into production as if it were a NASA project, as if it were the government itself of a country. What I'm trying to get at here is that there needs to be a series of checks and balances in place so that it is virtually impossible for all the tests to be passing and have something wrong. *And when some bug IS discovered* or a new feature is requested UGAT gives us a clear path of 1. setting up gherkin feature files, 2. implementing the step definitions, 3. implementing and e2e tests, and 4. writing unit tests along with the production code. I'll discuss more in later sections what exactly I mean by *perfect code*, but just know that without a solid suite of automated tests it will be an **extremely challenging, stressful, burdensome journey with horrific surprises, frustration pain** (maybe, but probably at some point it will become that).  You might get lucky and put something out once that works, but if you want to be a nimble dev team that moves fast then sooner of later you will slip and push a bug when your team doesn't use tests. Humans as imperfect creatures that make mistakes, and it's an intricate task to craft code similar to builsing a house of cards- every character and curly brace needs to be in place or the code will be interepreted differently. It may or may not cause a runtime error, but it could be an even harder to track dwn bug. As software is often an all-or-nothing deal, pushing bugs is devestating and could potentially ruin your product, brand, and business. If you want to be a wild cowboy coder with no tests, do it on your side projects. *For code that's going into production, use UGAT principles!*        
 
+ <div name="Can Testing Show An Absence of Defects"></div>
+### Can Testing Show An Absence of Defects?
+ No Amount of Testing Can prove no bugs from ISTQB, "Testing can shows the presence of defects: Testing can show that defects are present, but cannot prove that there are no defects". Since you could always be "missing one test" that *would* fail because of the bug in the system. If you can show that you have covered all situatinos with tests (a somewhat impossible goal) *and* all of those tests are passing then you can indeed be certain that that the software is absent of bugs. It's sort of a cop-out answer though, since the next question is, "well how do we know if we are missing certain tests?". Sometimes you can't foresee them, and you retrospectively write the tests to expose the bugs, but sometimes the missing or incorrect tests stem frmo not fully understand the requirements in the first place. 
+
+
+ <div name="The Three Types of Automated Tests"></div>
+## Part 2: The Three Types of Automated Tests
+
+
+ <div name="The Two Core Types of Automated Tests"></div>
+### The Two Core Types of Automated Tests
+Automated testing for most AngularJs apps fall into one of two categories: unit testing or web/ui testing. 
+
+
+
+<div name="E2e Tests"></div>
+### E2e Tests
+<img src="./images/karma.png" height="50"><img src="./images/protractor.png" height="50"> <img src="./images/mocha-chai.png" height="50">
+
+These are tests that do hit external endpoints. Normally, we set these up in a separate protractor.conf.js file. Althoguh we use protractor for these tests, they are not as concerned with simulating an actual user interacting with the application. These tests are solely with interacting with external resources to ensure that they work as expected. These tests could do such things like check to see if files exist in a remote location, check that any random transaction works for your current database instance, check that saving and retrieving data from the file system works, etc. this is also the place where you might put exploratory tests (tests that try to expose bugs) or other types of stress tests.
+
+<div name="Unit Tests"></div>
+### Unit Tests
+<img src="./images/karma.png" height="47"><img src="./images/jasmine.png" height="50"> <img src="./images/mocha-chai.png" height="50">
+
+Ahh, the unit tests. Incorporating heavy Protractor usage for E2e and acceptance tests should not steal any thunder at all from the classic unit tests. Indeed, doing all that preparatory Protractor work and writing out the features in gherkin, makes it much easier to start unit testing because you have a clear direction of where you want to be. Unit tests are concerned with checking individual functions. These normally return a coverage report, and as always we aim for 100% coverage by unit tests. 
+
+
+Part 3: Acceptance Tests
+
+### What Are Acceptance Tests
+
+
+### Cucumberizing Your Tests
+
+
+### BDD Without "Going All the Way"
+
+
 --- 
 <div name="The Triplex in Practice"></div>
-## Part 3: The Triplex in Practice
+## Part 4: The Triplex in Practice
 This section provides some advice for using the Triplex in Practice.
 
 <div name="Where Do I Put My Files"></div>
@@ -395,8 +433,13 @@ The important thing to note here is that any developer can provide the first two
 
 ---
 
-<div name="Additional Benefits of Triplex Development"></div>
-## Part 4: Additional Benefits of Triplex Development
+<div name="Writing Tests as Recognising and Applying Patterns"></div>
+### Writing Tests as Recognising and Applying Patterns
+
+
+
+<div name="Additional Benefits of UGAT Development"></div>
+## Part 5: Additional Benefits of UGAT Development
 
 <div name="Better Team Communication and Ubiquitous Language"></div>
 ### Better Team Communication and Ubiquitous Language
@@ -414,10 +457,20 @@ Manual testing can be a huge drain on time and resources. Of course you may not 
 ### Living Documentation
 The Living Documentation that is generaeted by your test runners is the key to the success of BDD. This article defines it well when it describes Living Documentation as, *"a dynamic method of system documentation that provides information that is current, accurate and easy to understand".* 3 Your cucumber tests and e2e tests generate json output that can be viewed by the html and css of your reports. With Istanbul (or similar code coverae tools for non-JavaScript projects) you have living documentation for your unit tests as well. Great documentation served up nicely on a web page; you can have it without ever having to write it! I know it sounds like a dream, but it's not. Leveraging the reports as much as possible to make high level decisions is key to BDD, and help tremendously in the long run. If you're just adopting Triplex Testing remember that generating and reading these three reports is **critical**. If you're an old pro, think back to projects where you didn't have them and remember not to take them for granted!
 
+<div name="Thrash Out Misunderstandings (Early)"></div>
+### Thrash Out Misunderstandings
+
 ---
 <div name="Reporting"></div>
-## Part 5: Reporting
+## Part 6: Reporting
 The type of reports we recommend in Triplex Testing are *generated* from the code, specifically from the terst runners. These runners will output information about each test, it's name, all the code it, whether it's passing or failing, etc. into a json object. Many open-source and private report templates have been developed to view and even interact with the json output. The report html and css are just static files that act as a shell or skeleton which you point to your json output file.
+
+
+### Reports for Non-Cucumberized Tests
+
+
+### Reports for Cucumberized Tests
+
 
 <div name="Generating Reports From the Codebase"></div>
 ### Generating Reports From the Codebase
@@ -432,14 +485,6 @@ This will recreate and overwrite the file *acceptance-report-data.json* each tim
 
 *(Snippet from karma.conf.js)*
 ```
- plugins : [
-      'karma-phantomjs-launcher',
-      'karma-angular-filesort',
-      'karma-coverage',
-      'karma-jasmine',
-      'karma-ng-html2js-preprocessor'
-    ],
-
     coverageReporter: {
       type : 'html',
       dir : 'coverage/'
@@ -451,10 +496,12 @@ The key thing to realize is that the developers never need to stop what they are
 
 <div name="Meetings with The Boss"></div>
 ### Meetings with "The Boss"
-The leadership, project sponsors, owners, and bosses of you, the lead developer, want to know periodically that progress is being made towards completion of the project and that there is a clear path for the future ahead. That's perfectly acceptable. This is perfectly illustrated with a cucumber report such as [this one](http://htmlpreview.github.io/?https://github.com/gkushang/grunt-cucumberjs/blob/cucumber-reports/test/cucumber-reports/cucumber-report-bootstrap.html). Once everyone's code is merged the script to generate the cucumber report is run again (or automatically run on your CI server and hosted to an internal url) you can just walk into the meeting with "the boss" with the two of you looking at the cucumber report. Ideally you want to say something like, "Last week we had 20 acceptance tests (aka gherkin scenarios) of 80 passing, 1 failing, and the rest unimplemented. Now week have 30 acceptance tests passing, 0 failing, and the rest unimplemented." Of course of accpetance test may be much for difficult and/ or time consuming to implement thatn another, and that does't really come thropugh too well in this report. However, this report tells you exactly what features were worked on in plain english language and whether it's working right now. If you're dealing with a more technical boss you can go into the actual methods of your code by going to your unit testing report such as this one or even your e2e reports like this one. If you have failing e2e tests that's kind of a bad thing so hopefully your e2e report is relatively boring. This is a great way to convey a ton of information; a complete snapshot of the project's development at any time. You can do this quickly and effectively and then talk about other things related to other coworkers, lunch, golf, etc. The boss can then refer back to these charts at any time after the meeting by visiting each corresponding url.
+The leadership, project sponsors, owners, and bosses of you, the lead developer, want to know periodically that progress is being made towards completion of the project and that there is a clear path for the future ahead. That's perfectly acceptable. This is perfectly illustrated with a cucumber report such as [this one](http://htmlpreview.github.io/?https://github.com/gkushang/grunt-cucumberjs/blob/cucumber-reports/test/cucumber-reports/cucumber-report-bootstrap.html). Once everyone's code is merged the script to generate the cucumber report is run again (or automatically run on your CI server and hosted to an internal url) you can just walk into the meeting with "the boss" with the two of you looking at the cucumber report. Ideally you want to say something like, "Last week we had 20 acceptance tests (aka gherkin scenarios) of 80 passing, 1 failing, and the rest unimplemented. Now week have 30 acceptance tests passing, 0 failing, and the est unimplemented." Of course of accpetance test may be much for difficult and/ or time consuming to implement thatn another, and that does't really come thropugh too well in this report. However, this report tells you exactly what features were worked on in plain english language and whether it's working right now. If you're dealing with a more technical boss you can go into the actual methods of your code by going to your unit testing report such as this one or even your e2e reports like this one. If you have failing e2e tests that's kind of a bad thing so hopefully your e2e report is relatively boring. This is a great way to convey a ton of information; a complete snapshot of the project's development at any time. You can do this quickly and effectively and then talk about other things related to other coworkers, lunch, golf, etc. The boss can then refer back to these charts at any time after the meeting by visiting each corresponding url.
 
 <div name="Sample Reports"></div>
-### Sample Reports
+## Part 6: Sample Reports
+
+### CucumberJS Acceptance Report
 
 Example of a cucumberjs acceptance tests report:
 
@@ -462,6 +509,8 @@ Cucumber reports are usually interactive an expandable. You can play with a [liv
 
 <img src="./images/cucumber-report-screenshot.png">
 
+
+### Unit Test Coverage Report
 
 Example of a unit testing coverage report:
 For Angular (and pretty much all front-end applications) code coverage is done with the *Istabul* library, and you only need focus on reading the report: 
@@ -471,7 +520,11 @@ For Angular (and pretty much all front-end applications) code coverage is done w
 <img src="./images/unit-test-report-file-view_js.png">
 
 
-Example of an e2e report: I haven't found a nice open-source template to visualize this yet, but the e2e protractor script does output json reporting to a file:
+In a cucumberized karma setup you'll get an output for a cucumber report, but you can also set it up to run a code coverage report as well. I recommend doing this because the code coverage report can show you areas of your code that have not been tested. This notifies you that you should either write a tests to check the functionality of that code or delete it (if it's unnecessary). It it's not unnecessary, what useful functionality does it provide? Whatever *that*m it should be the focus of youir unit tests. 
+
+
+
+Below is an example of the output from a non-cucumberized protractor test run. I haven't found a nice open-source template to visualize this yet, but the e2e protractor script does output json reporting to a file:
 
 ```
 [
@@ -498,13 +551,17 @@ Example of an e2e report: I haven't found a nice open-source template to visuali
 ]
 ```
 
+Because these tests are not cucumberized, it's a little more difficult
+to tell exactly what each test is doing, but you will still probably
+want to keep track of the features, examples, user stories, requirements
+etc. for that sprint and future sprints. 
 
 ---
 
-<div name="Official Triplex Projects"></div>
-## Part 6: Official Triplex Projects
+<div name="Official UGAT Projects"></div>
+## Part 6: Official UGAT Projects
 
-Projects that are offically recognised as following Triplex methodologies.
+Projects that are offically recognised as following UGAT methodologies.
 
 <div name="NG-NJ"></div>
 ###NG-NJ
@@ -513,15 +570,15 @@ Github Repo: [https://github.com/ng-nj/ng-nj.org](#https://github.com/ng-nj/ng-n
 
 Live Site: [https://ng-nj.github.io/ng-nj.org/](#https://ng-nj.github.io/ng-nj.org/)
 
-This is the official home page for NG-NJ. This site began as a side project by Jim Lynch. It was built on AngularJS 1.4 and was scaffolded with the Gulp-Angular yeoman generator. This was the first project to be officially recognised as a Triplex Testing Project. 
+This is the official home page for NG-NJ. This site began as a side project by Jim Lynch. It was built on AngularJS 1.4 and was scaffolded with the Gulp-Angular yeoman generator. This was the first project to be officially recognised as an UGAT Project. 
 
 
 <div name="Closing Thoughts"></div>
 ## Part 7: Closing Thoughts
 
 
-<div name="The Mythical Fourth Plex"></div>
-### The Mythical "Fourth Plex"
+<div name="The Mythical Fourth Test"></div>
+### The Mythical "Fourth Type" of Automates Test
 Triplex testing is based on the three core types of automated testing: acceptance tests, e2e tests, and unit tests. Armed with these, you're capable of incredibly solid coverage of your entire application. Often the unsual tests such as exploratory and smoke tests as grouped into the e2e testing category (as they should be). However, there are times when another method of automated testing emerges that doesn't fit into any of the three categories, and this is sometimes referred to as, "a fourth plex". For example,  [percy.io](https://percy.io/) is a tool for "visual regression testing" that can alert you of any unwanted visual changes from css or anything else. As new tools emerge and you find use cases for them in your work it would be silly not to take advantage of them. Just keep the core theories of Triplex testing in mind and view and fourth plex as an additional weapon in your automated testing arnesal.
 
 
@@ -534,9 +591,9 @@ There is a type of culture that is instilled in teams that are working well in t
 Sadly, many companies simply don't take automated seriously enough.  If your company has a "test your own code policy" then it has a **superficial testing ideaology that is not truly a part of the development process** in the way that Triplex Testing prescribes. Acceptance tests in particular are not just the developer's responsibility but the responsiblity of *every* member of the team. Developers working with business analysts and other developers helps promote a better understanding of the codebase for everyone, fosters ubiquitous language, and allows the team to hammer down a collective understanding of the requirements (and have the in english writing that, as a bonus, is executable). As the company grows and junior developers are brought on "test your own code" becomes "test your own code... or not" and then the whole system really breaks down, and all of the sudden the team is not doing triplex testing at all! Harnessing these three automated testing methodologies can be challenging, and let's be honest- many great "production code" developers don't know the first thing about unit tests. Putting ownership on code files and assignments crushes colalboration and destroys opportunities for learning and intellectual advancement. Policy's like "test your own code" raise an even larger red flag about how the company attributes certain code to a particular person. This puts a lot of risk in *weak links*, depency on *tribal knowledge*, and it becomes diffult to pass of to a BAU team. Many agile circles agree that it is tremendously more beneficial for the developers and the end product itself if there is a *collective ownership* of the code.
 
 
-<div name="Triplex Testing and the V-Model"></div>
-### Triplex Testing and the V-Model
-The V-Model is a common diagram used to describe the software lifecycle as phases and shows how the different levels of testing are importance at each phase. V-Model is a type of agile that highly values automated testing, specifically 4 types: acceptance testing, unit testing, system testing, and integration testing. Indeed, this may feel eerily similar to Triplex Testing which basically rolls up integration and system testing into one idea (although you could very well separate them into different configuration files if you wish). The V-Model diagram directly applies to Triplex Testing. The critical thing to remember about the V-Model is that it illustrates the business value at each stage of development of having all three (or four depending on how you look at it) suites of automated tests.
+<div name="UGAT and the V-Model"></div>
+### UGAT and the V-Model
+The V-Model is a common diagram used to describe the software lifecycle as phases and shows how the different levels of testing are importance at each phase. V-Model is a type of agile that highly values automated testing, specifically 4 types: acceptance testing, unit testing, system testing, and integration testing. Indeed, this may feel eerily similar to UGAT which basically rolls up integration and system testing into one idea (although you could very well separate them into different configuration files if you wish). The V-Model diagram directly applies to Triplex Testing. The critical thing to remember about the V-Model is that it illustrates the business value at each stage of development of having all three (or four depending on how you look at it) suites of automated tests.
 
 
 <div name="Effective Collaboration and Mob Programming"></div>
@@ -550,14 +607,14 @@ Exploratorny testing is the act of testing the software with the intent of break
 Use a new protractor configuration file that is set up basically just like your e2e protractor file. This difference is in the type of protractor testst heat you will write here. 
 
 
-<div name="Triplex Testing Community Groups"></div>
-### Triplex Testing Community Groups
+<div name="UGAT Community Groups"></div>
+### UGAT Community Groups
 Please join our facebook group here(!!): [https://www.facebook.com/groups/triplextesting/](#https://www.facebook.com/groups/triplextesting/)
 
 
 <div name="The Jasmine Vs. Chai Debate"></div>
 ### The Jasmine Vs. Chai Debate
-It is unfortunate that we even have to have this "debate". Jasmine and Chai-Mocha are two different libraries for writing unit tests and doing assertions in tests. Jasmine seems to be more popular in the Angular community and it used by default for many scaffolded projects, karma, and protractor. I also personally like the syntax of Jasmine a little better, although both provide a BDD style "expect-to" syntax. The trouble with Jasmine is that is an "all-out unit testing framework" as opposed to a testing library and an assertion library. This means that you won't be able to use Jasmine-style assertions in your low level step definitions which is why we use Chai-Mocha in step definition tests.
+It is unfortunate that we even have to have this "debate". Jasmine and Chai-Mocha are two different libraries for writing unit tests and doing assertions in tests. Jasmine seems to be more popular in the Angular community and it used by default for many scaffolded projects, karma, and protractor. I also personally like the syntax of Jasmine a little better, although both provide a BDD style "expect-to" syntax. The trouble with Jasmine is that is an "all-out unit testing framework" as opposed to a testing library and an assertion library. This means that you won't be able to use Jasmine-style assertions in your low level step definitions which is why we use Chai-Mocha in step definition tests. Perhaps one day there will exist a cucumber framework for unit and web/e2e tests with Jasmine-style assertions, but currently it dooesn't exist. :'(
 
 <div name="Crafting a Nice README"></div>
 ### Crafting a Nice README
@@ -570,12 +627,12 @@ The process of developing software is a continuous journey of discovery. The con
 
 <div name="How Could It Not Be Perfect?"></div>
 ### How Could It Not Be Perfect?
-If worry and histeria are the feelings of programmers who launch code with no tests, this captures the feeling of the complete opposite side of the spectrum. When you're CI server makes sure you don't slip, your unit test coverage is at 100%, your passing acceptance tests describe the business value of the system well, all external endpoints are working properly, and even manual exploratory tests can't poke any holes in it then you begin to develop a deep sense of trust in your tests and a confidence that the code does what it should and does it well. It should not be understated that this is a very romantic idea of development, but any team with enough discpline can get there. Lean on your tests. Depend on them so much that they give you the confidence to look any stakeholder in the eye, smile, and say, "How could it not be perfect?". 
+If worry and histeria are the feelings of programmers who launch code with no tests, the phrase "How xould it not be perfect?" captures the feeling of the complete opposite side of the spectrum. When you're CI server makes sure you don't slip, your unit test coverage is at 100%, your passing acceptance tests describe the business value of the system well, all external endpoints are working properly, and even manual exploratory tests can't poke any holes in it then you begin to develop a deep sense of trust in your tests and a confidence that the code does what it should and does it well. It should not be understated that this is a very romantic idea of development, but any team with enough discipline can get there. Lean on your tests. Depend on them so much that they give you the confidence to look any stakeholder in the eye, shrug with your hands up, and say, "How could it not be perfect?". 
 
 
-<div name="Triplex Tester Certification"></div>
-### Triplex Tester Certification
-If you've been practicing Triplex Testing Development for over a year and would like to take the official Triplex Tester Examination for the prestigious "Triplex Tester" designation then simply open an issue on this repo and a proctor will get in touch with you. 
+<div name="UGAT Tester Certification"></div>
+### UGAT Certification
+If you've been practicing UGAT-style Development for over a year and would like to take the official UGAT Examination for the prestigious "UGAT Tester" designation then simply open an issue on this repo and a proctor will get in touch with you. 
 
 
 
