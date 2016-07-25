@@ -8,20 +8,20 @@ Looking for Angular-UGAT, React-UGAT, or Java-UGAT?
 
 
 Table of Contents
-  - [Part 1: Intro to UGAT](#Intro to UGAT)
-  - [History of UGAT](#history)
-  - [Purpose of UGAT](#Purpose of UGAT)
-  - [Contributing to UGAT](#Contributing to UGAT)
-  - [It's Not Specific To AngularJS](#It's Not Specific To Angular)
-  - [This is a Guide](#This is a Guide)
-  - [Is This Yet Another Interpretation of "Agile"?](#Is This Yet Another Interpretation of Agile?)
-  - [Believe That Perfect Code Over Time Is Attainable](#Believe That Perfect Code Over Time Is Attainable)
-  - [Can Testing Show An Absence of Defects?](#Can Testing Show An Absence of Defects)
-  - [How Am I So Excited About Testing?](#How Am I So Excited About Testing?)
-  - [It Takes Discipline; a Lot of It](#It Takes Discipline; a Lot of It)
-  - [Part 2: The Two Core Types of Automated Tests in AngularJS](#The Two Core Types of Automated Tests)
-    - [Web / UI Tests](#Web / UI Tests)
-    - Unit Tests (#Unit Tests)
+ - [Part 1: Intro to UGAT](#Intro to UGAT)
+   - [History of UGAT](#history)
+   - [Purpose of UGAT](#Purpose of UGAT)
+   - [Contributing to UGAT](#Contributing to UGAT)
+   - [It's Not Specific To AngularJS](#It's Not Specific To Angular)
+   - [This is a Guide](#This is a Guide)
+   - [Is This Yet Another Interpretation of "Agile"?](#Is This Yet Another Interpretation of Agile?)
+   - [Believe That Perfect Code Over Time Is Attainable](#Believe That Perfect Code Over Time Is Attainable)
+   - [Can Testing Show An Absence of Defects?](#Can Testing Show An Absence of Defects)
+   - [How Am I So Excited About Testing?](#How Am I So Excited About Testing?)
+   - [It Takes Discipline; a Lot of It](#It Takes Discipline; a Lot of It)
+ - [Part 2: The Two Core Types of Automated Tests in AngularJS](#The Two Core Types of Automated Tests)
+   - [Web / UI Tests](#Web / UI Tests)
+   - Unit Tests (#Unit Tests)
   - [Part 3: Acceptance Tests](#Acceptance Tests) 
     - [What Are Acceptance Tests](#What Are Acceptance Tests)
     - [Cucumberizing Your Tests](#Cucumberizing Your Tests)
@@ -142,9 +142,9 @@ Software is an interesting thing in that it needs to be 100% perfect or else it 
 ### Can Testing Show An Absence of Defects?
  No Amount of Testing Can prove no bugs from ISTQB, "Testing can shows the presence of defects: Testing can show that defects are present, but cannot prove that there are no defects". Since you could always be "missing one test" that *would* fail because of the bug in the system. If you can show that you have covered all situatinos with tests (a somewhat impossible goal) *and* all of those tests are passing then you can indeed be certain that that the software is absent of bugs. It's sort of a cop-out answer though, since the next question is, "well how do we know if we are missing certain tests?". Sometimes you can't foresee them, and you retrospectively write the tests to expose the bugs, but sometimes the missing or incorrect tests stem frmo not fully understand the requirements in the first place. 
  
-  <div name="Can Testing Show An Absence of Defects"></div>
+  <div name="It Takes Discipline; a Lot of It"></div>
  - [It Takes Discipline; a Lot of It](#It Takes Discipline; a Lot of It)
- 
+ TODO
 
 
  <div name="How Am I So Excited About Testing?"></div>
