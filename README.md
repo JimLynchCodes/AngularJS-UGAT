@@ -17,7 +17,8 @@ Table of Contents
   - [Is This Yet Another Interpretation of "Agile"?](#Is This Yet Another Interpretation of Agile?)
   - [Believe That Perfect Code Over Time Is Attainable](#Believe That Perfect Code Over Time Is Attainable)
   - [Can Testing Show An Absence of Defects?](#Can Testing Show An Absence of Defects)
-  - [It Takes Discipline; a LOT of It](#It Takes Discipline; a LOT of It)
+  - [How Am I So Excited About Testing?](#How Am I So Excited About Testing?)
+  - [It Takes Discipline; a Lot of It](#It Takes Discipline; a Lot of It)
 
   - [Part 2: The Two Core Types of Automated Tests in AngularJS](#The Two Core Types of Automated Tests)
     - [Web / UI Tests](#Web / UI Tests)
@@ -142,6 +143,16 @@ Software is an interesting thing in that it needs to be 100% perfect or else it 
  <div name="Can Testing Show An Absence of Defects"></div>
 ### Can Testing Show An Absence of Defects?
  No Amount of Testing Can prove no bugs from ISTQB, "Testing can shows the presence of defects: Testing can show that defects are present, but cannot prove that there are no defects". Since you could always be "missing one test" that *would* fail because of the bug in the system. If you can show that you have covered all situatinos with tests (a somewhat impossible goal) *and* all of those tests are passing then you can indeed be certain that that the software is absent of bugs. It's sort of a cop-out answer though, since the next question is, "well how do we know if we are missing certain tests?". Sometimes you can't foresee them, and you retrospectively write the tests to expose the bugs, but sometimes the missing or incorrect tests stem frmo not fully understand the requirements in the first place. 
+ 
+  <div name="Can Testing Show An Absence of Defects"></div>
+ - [It Takes Discipline; a Lot of It](#It Takes Discipline; a Lot of It)
+ 
+
+
+ <div name="How Am I So Excited About Testing?"></div>
+ - [How Am I So Excited About Testing?](#How Am I So Excited About Testing?) 
+ Testing is a means to an end. What I'm really after is a pattern for developing software that allows you to frequently push software *that you know works* quickly, with better accuracy, and with less stress. Without automated tests you are *always* stressing about code in production (at least I am, anyway). When testers are used as bug-spotters then you as a developer look bad when they find bugs. Without automated you are manually checking that each requirement is satified which is error-prone and a huge waste of time that grows exponentially as progress is made and must be repeated over and over. Without *automating* your tests you'll never be as nimble and able to push code as quickly, never be able to throw your tests on a CI server, to run your tests against various browsers... Automated testing done right frees you from your "go-live fears" and allows you to quickly and consistenly push code that you can be confident works perfectly. To me, *that* is pretty exciting. 
+
 
 
  <div name="The Three Types of Automated Tests"></div>
