@@ -697,7 +697,7 @@ Having a root level features folder with a complete parrallel directory structur
 
 <div name="Q7"></div>
 ### Q7. My boss says we don't have enough time for testing. What should I do?
-Remind him that nobody wants 99% code. Every project should be given the earnest effort that it deserves, and nothing should be done half-heartedly. If there isn't enoguh time for perfect code, the project shouldn't begin in the first place. 
+Remind him that nobody wants 99% code. Every project should be given the earnest effort that it deserves, and nothing should be done half-heartedly. If there isn't enoguh time for perfect code, the project shouldn't begin in the first place. If he's worried about efficiency, remind him that a lot of buggy code is not as good as some code that works perfectly. Release in small interations of working software.
 
 <div name="Q8"></div>
 ### Q8. Can't we just manually test everything?
