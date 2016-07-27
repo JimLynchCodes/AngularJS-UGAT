@@ -37,9 +37,8 @@ Table of Contents
   - An E2e Test Example
   - Running E2e Tests
   - [Unit Tests](#Unit Tests)
-  - A Unit Test Example
-  - Running Unit Tests
-   
+  - A Unit Test Example(#Unit Test Example)
+  - Running Unit Tests(#Running Unit Tests)
  - [Part 4: The Testing Triplex in Practice](#The Triplex in Practice)
   - [Where Do I Put My Files?](#Where Do I Put My Files)
   - [The Gherkin Comes First](#The Gherkin Comes First)
