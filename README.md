@@ -10,67 +10,66 @@ Looking for <a href="https://github.com/JimTheMan/Angular-UGAT">Angular-UGAT</a>
 
 Table of Contents
  - [Part 1: Intro to UGAT](#Intro to UGAT)
-   - [History of UGAT](#history)
-   - [Purpose of UGAT](#Purpose of UGAT)
-   - [Contributing to UGAT](#Contributing to UGAT)
-   - [It's Not Specific To AngularJS](#It's Not Specific To Angular)
-   - [This is a Guide](#This is a Guide)
-   - [Is This Yet Another Interpretation of "Agile"?](#Is This Yet Another Interpretation of Agile?)
-   - [Believe That Perfect Code Over Time Is Attainable](#Believe That Perfect Code Over Time Is Attainable)
-   - [Can Testing Show An Absence of Defects?](#Can Testing Show An Absence of Defects)
-   - [It Takes Discipline; a Lot of It](#It Takes Discipline; a Lot of It)
-   - [How Am I So Excited About Testing?](#How Am I So Excited About Testing?)
+  - [History of UGAT](#history)
+  - [Purpose of UGAT](#Purpose of UGAT)
+  - [Contributing to UGAT](#Contributing to UGAT)
+  - [It's Not Specific To AngularJS](#It's Not Specific To Angular)
+  - [This is a Guide](#This is a Guide)
+  - [Is This Yet Another Interpretation of "Agile"?](#Is This Yet Another Interpretation of Agile?)
+  - [Believe That Perfect Code Over Time Is Attainable](#Believe That Perfect Code Over Time Is Attainable)
+  - [Can Testing Show An Absence of Defects?](#Can Testing Show An Absence of Defects)
+  - [It Takes Discipline; a Lot of It](#It Takes Discipline; a Lot of It)
+  - [How Am I So Excited About Testing?](#How Am I So Excited About Testing?)
  - [Part 2: The Two Core Types of Automated Tests in AngularJS](#The Two Core Types of Automated Tests)
-   - [UI Tests](#UI Tests)
-   - [Unit Tests](#Unit Tests)
-  - [Part 3: Acceptance Tests](#Acceptance Tests) 
-    - [What Are Acceptance Tests](#What Are Acceptance Tests)
-    - [Cucumberizing Your Tests](#Cucumberizing Your Tests)
-    - [BDD Without Cucumber](#BDD Without Cucumber)
-
-  
-    - [Overview of the Three Parts](#Overview of the Three Parts)
-    - [The Triplex Diagram](#The Triplex Diagram)
-    - [Acceptance Tests](#Acceptance Tests)
-      - A Gherkin Example
-      - A Step Definition Example
-      - Running Acceptance Tests
-    - [E2e Tests](#E2e Tests)
-      - An E2e Test Example
-      - Running E2e Tests
-    - [Unit Tests](#Unit Tests)
-      - A Unit Test Example
-      - Running Unit Tests
-  - [Part 4: The Testing Triplex in Practice](#The Triplex in Practice)
-    - [Where Do I Put My Files?](#Where Do I Put My Files)
-    - [The Gherkin Comes First](#The Gherkin Comes First)
-    - [Executing The Gherkin Scripts](#Executing The Gherkin Scripts)
-    - [Executing the Acceptance Tests](#Executing the Acceptance Tests)
-    - [Implementing Step Definitions as Web Tests](#Implementing Step Definitions as Web Tests)
-    - [Implementing Step Definitions as Unit Tests](#Implementing Step Definitions as Unit Tests)
-    - [Avoiding the UI in Step Definitions](#Avoiding the UI in Step Definitions)
-    - [Implementing E2e Tests in a Separate Protractor Config file](#Implementing E2e Tests in a Separate Protractor Conf.js file)
-    - [Write Unit Tests and Code TDD Style](#Write Unit Tests and Code TDD Style)
-    - [All the Browsers in All the Land](#All the Browsers in All the Land)
-    - [Notes on Deployment](#Deployment)
-    - [Testing On Multiple Browsers](#Testing On Multiple Browsers)
-    - [Everyone Reads the Gherkin, Dev's Change the Gherkin](#Everyone Reads, Devs Change)
-    - [No Manual Testers](#No Manual Testers)
-    - [The BAU Handoff](#The BAU Handoff)
-    - [Working Effectively with Non-Cucumberized Tests](#Working Effectively with Non-Cucumberized Tests)
-    - [The Deliverables](#The Three Deliverables)
-    - [Automating Testing is Recognising and Applying Patterns](#Automating Testing is Recognising and Applying Patterns)
+  - [UI Tests](#UI Tests)
+  - [Unit Tests](#Unit Tests)
+ - [Part 3: Acceptance Tests](#Acceptance Tests) 
+  - [What Are Acceptance Tests](#What Are Acceptance Tests)
+  - [Cucumberizing Your Tests](#Cucumberizing Your Tests)
+  - [BDD Without Cucumber](#BDD Without Cucumber)
+  - [Overview of the Three Parts](#Overview of the Three Parts)
+  - [The Triplex Diagram](#The Triplex Diagram)
+  - [Acceptance Tests](#Acceptance Tests)
+  - A Gherkin Example
+  - A Step Definition Example
+  - Running Acceptance Tests
+  - [E2e Tests](#E2e Tests)
+  - An E2e Test Example
+  - Running E2e Tests
+  - [Unit Tests](#Unit Tests)
+  - A Unit Test Example
+  - Running Unit Tests
+   
+ - [Part 4: The Testing Triplex in Practice](#The Triplex in Practice)
+  - [Where Do I Put My Files?](#Where Do I Put My Files)
+  - [The Gherkin Comes First](#The Gherkin Comes First)
+  - [Executing The Gherkin Scripts](#Executing The Gherkin Scripts)
+  - [Executing the Acceptance Tests](#Executing the Acceptance Tests)
+  - [Implementing Step Definitions as Web Tests](#Implementing Step Definitions as Web Tests)
+  - [Implementing Step Definitions as Unit Tests](#Implementing Step Definitions as Unit Tests)
+  - [Avoiding the UI in Step Definitions](#Avoiding the UI in Step Definitions)
+  - [Implementing E2e Tests in a Separate Protractor Config file](#Implementing E2e Tests in a Separate Protractor Conf.js file)
+  - [Write Unit Tests and Code TDD Style](#Write Unit Tests and Code TDD Style)
+  - [All the Browsers in All the Land](#All the Browsers in All the Land)
+  - [Notes on Deployment](#Deployment)
+  - [Testing On Multiple Browsers](#Testing On Multiple Browsers)
+  - [Everyone Reads the Gherkin, Dev's Change the Gherkin](#Everyone Reads, Devs Change)
+  - [No Manual Testers](#No Manual Testers)
+  - [The BAU Handoff](#The BAU Handoff)
+  - [Working Effectively with Non-Cucumberized Tests](#Working Effectively with Non-Cucumberized Tests)
+  - [The Deliverables](#The Three Deliverables)
+  - [Automating Testing is Recognising and Applying Patterns](#Automating Testing is Recognising and Applying Patterns)
   - [Part 5: Additional Benefits of Triplex Development](#Additional Benefits of Triplex Development)
-    - [Better Team Communication and Ubiquitous Language](#Better Team Communication and Ubiquitous Language)
-    - [The Requirements and Code Are Always In Sync](#The Requirements and Code Are Always In Sync)
-    - [Minimize Manual Testing](#Minimize Manual Testing)
-    - [Living Documentation](#Living Documentation)
+   - [Better Team Communication and Ubiquitous Language](#Better Team Communication and Ubiquitous Language)
+   - [The Requirements and Code Are Always In Sync](#The Requirements and Code Are Always In Sync)
+   - [Minimize Manual Testing](#Minimize Manual Testing)
+   - [Living Documentation](#Living Documentation)
   - [Part 6: Reporting](#Reporting)
-    - [Generating Reports From the Codebase](#Generating Reports From the Codebase)
-    - [Meetings with "The Boss"](#Meetings with The Boss)
-    - [Sample Reports](#Sample Reports)
+   - [Generating Reports From the Codebase](#Generating Reports From the Codebase)
+   - [Meetings with "The Boss"](#Meetings with The Boss)
+   - [Sample Reports](#Sample Reports)
   - [Part 7: Official Triplex Projects](#Official Triplex Projects)
-    - [NG-NJ](#NG-NJ)
+   - [NG-NJ](#NG-NJ)
   - [Part 8: Closing Thoughts](#Closing Thoughts)
     - [The Mythical "Fourth Plex"](#The Mythical Fourth Plex)
     - [Laid Back Perfectionism](#Laid Back Perfectionism)
@@ -169,8 +168,8 @@ Automated testing for most AngularJs apps fall into one of two categories: unit 
 
 
 
-<div name="Web / UI Tests"></div>
-### E2e Tests
+<div name="UI Tests"></div>
+### UI Tests
 <img src="./images/karma.png" height="50"><img src="./images/protractor.png" height="50"> <img src="./images/mocha-chai.png" height="50">
 
 These are tests that do hit external endpoints. Normally, we set these up in a separate protractor.conf.js file. Althoguh we use protractor for these tests, they are not as concerned with simulating an actual user interacting with the application. These tests are solely with interacting with external resources to ensure that they work as expected. These tests could do such things like check to see if files exist in a remote location, check that any random transaction works for your current database instance, check that saving and retrieving data from the file system works, etc. this is also the place where you might put exploratory tests (tests that try to expose bugs) or other types of stress tests.
@@ -183,15 +182,18 @@ Ahh, the unit tests. Incorporating heavy Protractor usage for E2e and acceptance
 
 
 
-<div name="Unit Tests"></div>
+<div name="Acceptance Tests"></div>
 Part 3: Acceptance Tests
 
+<div name="What Are Acceptance Tests"></div>
 ### What Are Acceptance Tests
 TODO
 
+<div name="Cucumberizing Your Tests"></div>
 ### Cucumberizing Your Tests
 TODO
 
+<div name="Cucumberizing Your Tests"></div>
 ### BDD Without "Going All the Way"
 TODO
 
