@@ -112,6 +112,7 @@ UGAT (pronouced *ooh* like *"foo"* and *gat* like *"cat"*) is an acronym that st
 
 UGAT builds on the test-first theories of TDD (Test-Driven Development) and extends it by applying principles of BDD (Behavior-Driven Development). Thus, the testing triplex becomes a tao, or way of developing software where the result is truly transparent, agile, and just works. This guide provides a set of instructions for developing with The UGAT mindset, but it is up to you to find the tao on your own. You may or may not use the exact same tools as shown here, but hopefully you can take a way of thinking that will lead to successful testing implentations again and again.
 
+### WTF
 
 <div name="Contributing to UGAT"></div>
 ### Contributing to UGAT
@@ -147,20 +148,22 @@ Software is an interesting thing in that it needs to be 100% perfect or else it 
  No Amount of Testing Can prove no bugs from ISTQB, "Testing can shows the presence of defects: Testing can show that defects are present, but cannot prove that there are no defects". Since you could always be "missing one test" that *would* fail because of the bug in the system. If you can show that you have covered all situatinos with tests (a somewhat impossible goal) *and* all of those tests are passing then you can indeed be certain that that the software is absent of bugs. It's sort of a cop-out answer though, since the next question is, "well how do we know if we are missing certain tests?". Sometimes you can't foresee them, and you retrospectively write the tests to expose the bugs, but sometimes the missing or incorrect tests stem frmo not fully understand the requirements in the first place. 
  
  
-  <div name="It Takes Discipline; a Lot of It"></div>
- ### It Takes Discipline; a Lot of It
+<div name="It Takes Discipline; a Lot of It"></div>
+### It Takes Discipline; a Lot of It
  
- Using automated tests *can* unlock the freedom to be stress free and continuously push code that works pefectly. BUT, it doesn't happen automatically. Only after you truly master all aspects of UGAT and experience it firsthand a few times will you really be able to do it well and make it look easy. Even the creator Jim Lynch isn't at that level! Doing BDD well all the way through is **hard**, and you really have to force yourself to write the specs tests first. Don't break down or give up, and don't let your team give up either. Coach them yourself if you have to, or have a dedicated SET (software Engineer in Test) to make sure the testing isn't neglected. Push through, give it 100% effort, and try to make it work. If you fail, do retrospectives and figure out what went wrong. 
+Using automated tests *can* unlock the freedom to be stress free and continuously push code that works pefectly. BUT, it doesn't happen automatically. Only after you truly master all aspects of UGAT and experience it firsthand a few times will you really be able to do it well and make it look easy. Even the creator Jim Lynch isn't at that level! Doing BDD well all the way through is **hard**, and you really have to force yourself to write the specs tests first. Don't break down or give up, and don't let your team give up either. Coach them yourself if you have to, or have a dedicated SET (software Engineer in Test) to make sure the testing isn't neglected. Push through, give it 100% effort, and try to make it work. If you fail, do retrospectives and figure out what went wrong. 
 
 
- <div name="How Am I So Excited About Testing?"></div>
- ### How Am I So Excited About Testing?
+<div name="How Am I So Excited About Testing?"></div>
+### How Am I So Excited About Testing?
  
- Testing is a means to an end. What I'm really after is a pattern for developing software that allows you to frequently push software *that you know works* quickly, with better accuracy, and with less stress. Without automated tests you are *always* stressing about code in production (at least I am, anyway). When testers are used as bug-spotters then you as a developer look bad when they find bugs. Without automated you are manually checking that each requirement is satified which is error-prone and a huge waste of time that grows exponentially as progress is made and must be repeated over and over. Without *automating* your tests you'll never be as nimble and able to push code as quickly, never be able to throw your tests on a CI server, to run your tests against various browsers... Automated testing done right frees you from your "go-live fears" and allows you to quickly and consistenly push code that you can be confident works perfectly. To me, *that* is pretty exciting. 
+ 
+ 
+Testing is a means to an end. What I'm really after is a pattern for developing software that allows you to frequently push software *that you know works* quickly, with better accuracy, and with less stress. Without automated tests you are *always* stressing about code in production (at least I am, anyway). When testers are used as bug-spotters then you as a developer look bad when they find bugs. Without automated you are manually checking that each requirement is satified which is error-prone and a huge waste of time that grows exponentially as progress is made and must be repeated over and over. Without *automating* your tests you'll never be as nimble and able to push code as quickly, never be able to throw your tests on a CI server, to run your tests against various browsers... Automated testing done right frees you from your "go-live fears" and allows you to quickly and consistenly push code that you can be confident works perfectly. To me, *that* is pretty exciting. 
  
  ---
 
- <div name="The Two Core Types of Automated Tests in AngularJS"></div>
+<div name="The Two Core Types of Automated Tests in AngularJS"></div>
 ## Part 2: The Two Core Types of Automated Tests
 Automated testing for most AngularJs apps fall into one of two categories: unit testing or web/ui testing. 
 
