@@ -163,7 +163,7 @@ Testing is a means to an end. What I'm really after is a pattern for developing 
  
  ---
 
-<div name="The Two Core Types of Automated Tests in AngularJS"></div>
+<div name="The Two Core Types of Automated Tests"></div>
 ## Part 2: The Two Core Types of Automated Tests
 Automated testing for most AngularJs apps fall into one of two categories: unit testing or web/ui testing. 
 
