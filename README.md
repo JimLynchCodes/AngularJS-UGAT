@@ -31,9 +31,9 @@ Table of Contents
   - [A Gherkin Example](#A Gherkin Example)
   - [A Step Definition Example](#A Step Definition Example)
   - [Running Acceptance Tests](#Running Acceptance Tests)
-  - 
-  - [Part 4: The Testing Triplex in Practice](#The Triplex in Practice)
+ - [Part 4: UGAT in Practice](#UGAT Practice)
   - [Where Do I Put My Files?](#Where Do I Put My Files)
+  - [Don't Write Tests, Write Executable Specifications](#Don't Write Tests, Write Executable Specifications)
   - [The Gherkin Comes First](#The Gherkin Comes First)
   - [Executing The Gherkin Scripts](#Executing The Gherkin Scripts)
   - [Executing the Acceptance Tests](#Executing the Acceptance Tests)
@@ -213,7 +213,12 @@ This section provides some advice for using the Triplex in Practice.
 
 <div name="Where Do I Put My Files"></div>
 ### Where Do I Put My Files? 
-Most experienced SPA developers agree that at a high level a feature-based directory structure scales best and that parallel directory structures should be avoided. Tests that can be directly attributedto certain classes or features should be near them. We recommend putting a *feature* directory in the root directory of that particular feature. Then put the .feature file and step definitions (optionally in a step_definitions subfolder) inside of the new directory. For units tests I like to keep the .spec.js test file directly next to the correponsing .js file. Since our acceptance tests are the selenium / Protractor tests heavily tied to the features, the E2e tests can be more general. For example, an e2e test could just check that a database endpoint returns *something.* This has nothing to do with any particular feature, and for this reason it's customary to have an e2e folder on the same level as the src folder which stores all of the e2e tests. In JavaScript a good build script can sort out the feature and step definition files so it's fine to put your acceptance tests and unit tests right in the src folder with the relevant files for that particular feature. As a final note on this topic I'll mention that if you do decide to have *parallel directory trees* and your apps grows large enough you (or your developers) are going to be scrolling like crazy, losing track of files, and possibly considering giving up on testing. Make good choices about your directory structure.                                 
+Most experienced SPA developers agree that at a high level a feature-based directory structure scales best and that parallel directory structures should be avoided. Tests that can be directly attributedto certain classes or features should be near them. We recommend putting a *feature* directory in the root directory of that particular feature. Then put the .feature file and step definitions (optionally in a step_definitions subfolder) inside of the new directory. For units tests I like to keep the .spec.js test file directly next to the correponsing .js file. Since our acceptance tests are the selenium / Protractor tests heavily tied to the features, the E2e tests can be more general. For example, an e2e test could just check that a database endpoint returns *something.* This has nothing to do with any particular feature, and for this reason it's customary to have an e2e folder on the same level as the src folder which stores all of the e2e tests. In JavaScript a good build script can sort out the feature and step definition files so it's fine to put your acceptance tests and unit tests right in the src folder with the relevant files for that particular feature. As a final note on this topic I'll mention that if you do decide to have *parallel directory trees* and your apps grows large enough you (or your developers) are going to be scrolling like crazy, losing track of files, and possibly considering giving up on testing. Make good choices about your directory structure.           
+
+<div name="Don't Write Tests, Write Executable Specifications"></div>
+### Don't Write Tests, Write Executable Specifications
+TODO
+
 
 <div name="The Gherkin Comes First"></div>
 ### Gherkin Comes First
