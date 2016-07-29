@@ -21,8 +21,13 @@ Table of Contents
   - [It Takes Discipline; a Lot of It](#It Takes Discipline; a Lot of It)
   - [How Am I So Excited About Testing?](#How Am I So Excited About Testing?)
  - [Part 2: The Two Core Types of Automated Tests in AngularJS](#The Two Core Types of Automated Tests)
+  - [The Duality of Perfect Code](#The Duality of Perfect Code)
   - [UI Tests](#UI Tests)
+  - [Running Unit Tests](#[Running Unit Tests)
+  - [The Code Coverage Report](#[The Code Coverage Report)
   - [Unit Tests](#Unit Tests)
+  - [Running UI Tests](#Running UI Tests)
+  - [The UI Test Report](#[The UI Test Report)
  - [Part 3: Acceptance Tests](#Acceptance Tests) 
   - [What Are Acceptance Tests](#What Are Acceptance Tests)
   - [Cucumberizing Your Tests](#Cucumberizing Your Tests)
@@ -158,7 +163,24 @@ Testing is a means to an end. What I'm really after is a pattern for developing 
 ## Part 2: The Two Core Types of Automated Tests
 Automated testing for most AngularJs apps fall into one of two categories: unit testing or web/ui testing. 
 
+<div name="The Duality of Perfect Code"></div>
+### The Duality of Perfect Code
+TODO
 
+<div name="Unit Tests"></div>
+### Unit Tests
+<img src="./images/karma.png" height="47"><img src="./images/jasmine.png" height="50"> <img src="./images/mocha-chai.png" height="50">
+
+Ahh, the unit tests. Incorporating heavy Protractor usage for E2e and acceptance tests should not steal any thunder at all from the classic unit tests. Indeed, doing all that preparatory Protractor work and writing out the features in gherkin, makes it much easier to start unit testing because you have a clear direction of where you want to be. Unit tests are concerned with checking individual functions. These normally return a coverage report, and as always we aim for 100% coverage by unit tests. 
+
+
+<div name="Running Unit Tests"></div>
+### Running Unit Tests
+TODO
+
+<div name="The Code Coverage Report"></div>
+### The Code Coverage Report
+TODO
 
 <div name="UI Tests"></div>
 ### UI Tests
@@ -166,11 +188,15 @@ Automated testing for most AngularJs apps fall into one of two categories: unit 
 
 These are tests that do hit external endpoints. Normally, we set these up in a separate protractor.conf.js file. Althoguh we use protractor for these tests, they are not as concerned with simulating an actual user interacting with the application. These tests are solely with interacting with external resources to ensure that they work as expected. These tests could do such things like check to see if files exist in a remote location, check that any random transaction works for your current database instance, check that saving and retrieving data from the file system works, etc. this is also the place where you might put exploratory tests (tests that try to expose bugs) or other types of stress tests.
 
-<div name="Unit Tests"></div>
-### Unit Tests
-<img src="./images/karma.png" height="47"><img src="./images/jasmine.png" height="50"> <img src="./images/mocha-chai.png" height="50">
 
-Ahh, the unit tests. Incorporating heavy Protractor usage for E2e and acceptance tests should not steal any thunder at all from the classic unit tests. Indeed, doing all that preparatory Protractor work and writing out the features in gherkin, makes it much easier to start unit testing because you have a clear direction of where you want to be. Unit tests are concerned with checking individual functions. These normally return a coverage report, and as always we aim for 100% coverage by unit tests. 
+<div name="Running UI Tests"></div>
+### Running UI Tests
+TODO
+
+ 
+<div name="The UI Test Report"></div>
+### The UI Test Report
+TODO
 
 ---
 
