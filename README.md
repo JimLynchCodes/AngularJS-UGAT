@@ -28,11 +28,10 @@ Table of Contents
   - [Cucumberizing Your Tests](#Cucumberizing Your Tests)
   - [BDD Without Cucumber](#BDD Without Cucumber)
   - [Overview of the Three Parts](#Overview of the Three Parts)
-  - [The Triplex Diagram](#The Triplex Diagram)
-  - [Acceptance Tests](#Acceptance Tests)
   - [A Gherkin Example](#A Gherkin Example)
   - [A Step Definition Example](#A Step Definition Example)
   - [Running Acceptance Tests](#Running Acceptance Tests)
+  - 
   - [Part 4: The Testing Triplex in Practice](#The Triplex in Practice)
   - [Where Do I Put My Files?](#Where Do I Put My Files)
   - [The Gherkin Comes First](#The Gherkin Comes First)
@@ -97,7 +96,7 @@ Table of Contents
 <div name="history"></div>
 ### History of UGAT
 
-UGAT (pronouced *ooh* like *"foo"* and *gat* like *"cat"*) is an acronym that stands for "Ultimate Guide (or Guidebook) for Automated Testing). I'm Jim Lynch, a web developer from New Jersey and organizsr of NG-NJ. While working on angularJS projects I was doing standard unit testing along with ui/web tests with Protractor. After really learning about BDD (Behavior Driven Development) I fell in love with the idea of putting your requirements into automated, execeutable tests. However, it was unclear how exactly to set up and practice BDD with an Angular, other SPA frameworks, or general JavaScript projects in a way that gelled nicely with the other automated tests. I've studying these different types of testing and tried them myself on real projects, I think I've discovered a way to develop software that works pretty well. This document attempts to distill this philosphy supporting and strengthening your codebase with automated tests and show you *how* to do it, specifically in the context of an AngularJS project.
+UGAT (pronouced *ooh* like *"foo"* and *gat* like *"cat"*) is an acronym that stands for "Ultimate Guide (or Guidebook) for Automated Testing). I'm Jim Lynch, a web developer from New Jersey and organizsr of NG-NJ. While working on angularJS projects I was doing standard unit testing along with ui/web tests with Protractor. After really learning about BDD (Behavior Driven Development) I fell in love with the idea of putting your requirements into automated, execeutable tests. However, it was unclear how exactly to set up and practice BDD with an Angular, other SPA frameworks, or general JavaScript projects in a way that gelled nicely with the other automated tests. I've studying these different types of testing and tried them myself on real projects, an found what worked and didn't work for my team. I think I've discovered a great methodology for developing applications, and in this guide I'll show you concrete examples of how to apply it. This document attempts to distill this philosphy supporting and strengthening your codebase with automated tests and show you *how* to do it, specifically in the context of an AngularJS project.
 
 <div name="Purpose of UGAT"></div>
 ### Purpose of UGAT
@@ -173,10 +172,10 @@ These are tests that do hit external endpoints. Normally, we set these up in a s
 
 Ahh, the unit tests. Incorporating heavy Protractor usage for E2e and acceptance tests should not steal any thunder at all from the classic unit tests. Indeed, doing all that preparatory Protractor work and writing out the features in gherkin, makes it much easier to start unit testing because you have a clear direction of where you want to be. Unit tests are concerned with checking individual functions. These normally return a coverage report, and as always we aim for 100% coverage by unit tests. 
 
-
+---
 
 <div name="Acceptance Tests"></div>
-Part 3: Acceptance Tests
+## Part 3: Acceptance Tests
 
 <div name="What Are Acceptance Tests"></div>
 ### What Are Acceptance Tests
@@ -195,16 +194,21 @@ TODO
 TODO
 
 <div name="A Step Definition Example"></div>
-### A Gherkin Example
+### A Step Definition Example
 TODO
 
 <div name="Running Acceptance Tests"></div>
-### A Gherkin Example
+### Running Acceptance Tests
+TODO
+
+<div name="The Reports Are Alive!"></div>
+### Running Acceptance Tests
 TODO
 
 --- 
-<div name="The Triplex in Practice"></div>
-## Part 4: The Triplex in Practice
+<div name="UGAT in Practice"></div>
+## Part 4: UGAT in Practice
+
 This section provides some advice for using the Triplex in Practice.
 
 <div name="Where Do I Put My Files"></div>
