@@ -87,7 +87,7 @@ Table of Contents
   - [Q2. Do I *need* to use acceptance tests?](#Q2)
   - [Q3. Do I *need* to use unit tests?](#Q3)
   - [Q4. Do I *need* to use e2e tests?](#Q4)
-  - [Q5. When should I *NOT* use the Testing Triplex?](#Q5)
+  - [Q5. When should I *NOT* use UGAT?](#Q5)
   - [Q6. Most Cucumber / BDD examples have a root level "features" folder. Why don't you follow this convention?](#Q6)
   - [Q7. My boss says we don't have enough time for testing. What should I do?](#Q7)
   - [Q8. Q8. Can't we just manually test everything?](#Q8)
