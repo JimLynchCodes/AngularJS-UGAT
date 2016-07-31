@@ -67,7 +67,7 @@ Table of Contents
   - [Generating Reports From the Codebase](#Generating Reports From the Codebase)
   - [Meetings with "The Boss"](#Meetings with The Boss)
   - [Sample Reports](#Sample Reports)
- - [Part 7: Official Triplex Projects](#Official Triplex Projects)
+ - [Part 7: Official UGAT Projects](#Official UGAT Projects)
   - [NG-NJ](#NG-NJ)
  - [Part 8: Closing Thoughts](#Closing Thoughts)
   - [The Mythical "Fourth Plex"](#The Mythical Fourth Plex)
@@ -578,12 +578,12 @@ The type of reports we recommend in Triplex Testing are *generated* from the cod
 
 
 <div name="Why Reports Are Extremely Important"></div>
-## Why Reports Are Extremely Important
+### Why Reports Are Extremely Important
 TODO
 
 
 <div name="Keeping the Reports Fresh"></div>
-## Keeping the Reports Fresh
+### Keeping the Reports Fresh
 TODO
 
 <div name="Generating Reports From the Codebase"></div>
@@ -613,7 +613,7 @@ The key thing to realize is that the developers never need to stop what they are
 The leadership, project sponsors, owners, and bosses of you, the lead developer, want to know periodically that progress is being made towards completion of the project and that there is a clear path for the future ahead. That's perfectly acceptable. This is perfectly illustrated with a cucumber report such as [this one](http://htmlpreview.github.io/?https://github.com/gkushang/grunt-cucumberjs/blob/cucumber-reports/test/cucumber-reports/cucumber-report-bootstrap.html). Once everyone's code is merged the script to generate the cucumber report is run again (or automatically run on your CI server and hosted to an internal url) you can just walk into the meeting with "the boss" with the two of you looking at the cucumber report. Ideally you want to say something like, "Last week we had 20 acceptance tests (aka gherkin scenarios) of 80 passing, 1 failing, and the rest unimplemented. Now week have 30 acceptance tests passing, 0 failing, and the est unimplemented." Of course of accpetance test may be much for difficult and/ or time consuming to implement thatn another, and that does't really come thropugh too well in this report. However, this report tells you exactly what features were worked on in plain english language and whether it's working right now. If you're dealing with a more technical boss you can go into the actual methods of your code by going to your unit testing report such as this one or even your e2e reports like this one. If you have failing e2e tests that's kind of a bad thing so hopefully your e2e report is relatively boring. This is a great way to convey a ton of information; a complete snapshot of the project's development at any time. You can do this quickly and effectively and then talk about other things related to other coworkers, lunch, golf, etc. The boss can then refer back to these charts at any time after the meeting by visiting each corresponding url.
 
 <div name="Sample Reports"></div>
-## Part 6: Sample Reports
+## Part 7: Sample Reports
 
 ### CucumberJS Acceptance Report
 
@@ -673,7 +673,7 @@ etc. for that sprint and future sprints.
 ---
 
 <div name="Official UGAT Projects"></div>
-## Part 6: Official UGAT Projects
+## Part 7: Official UGAT Projects
 
 Projects that are offically recognised as following UGAT methodologies.
 
