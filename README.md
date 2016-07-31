@@ -24,7 +24,7 @@ Table of Contents
   - [The Duality of Perfect Code](#The Duality of Perfect Code)
   - [UI Tests](#UI Tests)
   - [Running UI Tests](#Running UI Tests)
-  - [The Code Coverage Report](#The Code Coverage Report)
+  - [The UI Tests Report](#The UI Tests Report)
   - [Unit Tests](#Unit Tests)
   - [Running Unit Tests](#Running Unit Tests)
   - [The Code Coverage Report](#The Code Coverage Report)
