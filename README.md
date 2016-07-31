@@ -780,8 +780,8 @@ No. Although do you want to have coverage of all UI in web tests, going through 
 **Yes.** The first time that Billy Bob's backend starts acting fishy and your program breaks, you're going to drive yourself crazy not knowing if it's an issue with your code or his code. If you are using **anything** external to your client side code, why not set up a tests solely to ensure that the endpoint works as expected?
 
 <div name="Q5"></div>
-### Q5. When should I NOT use the Testing Triplex?
-Triplex Testing is a long-term way of developing serious projects that are meant to eventually go into production and have real users.  There is some set up and background knowledge required to correctly implement Triplex Testing. The only times you shouldn't use it are for throw-away test projects where you don't care about having buggy software, misunderstanding the stakeholders'requirements,or providing exactly the right functionality. 
+### Q5. When should I NOT use UGAT?
+UGAT is a long-term methodology for developing serious projects that are meant to eventually go into production and have real users.  There is some set up and background knowledge required to correctly implement all of the various test types and test runners that go into it. The only times you shouldn't use UGAT are for throw-away test projects or prototypes where you don't care about having buggy software, misunderstanding the stakeholders'requirements,or providing exactly the right functionality. 
 
 <div name="Q6"></div>
 ### Q6. Most Cucumber / BDD examples have a root level "features" folder. Why don't you follow this convention?
@@ -789,14 +789,14 @@ Having a root level features folder with a complete parrallel directory structur
 
 <div name="Q7"></div>
 ### Q7. My boss says we don't have enough time for testing. What should I do?
-Remind him that nobody wants 99% code. Every project should be given the earnest effort that it deserves, and nothing should be done half-heartedly. If there isn't enoguh time for perfect code, the project shouldn't begin in the first place. If he's worried about efficiency, remind him that a lot of buggy code is not as good as some code that works perfectly. Release in small interations of working software.
+Remind him that nobody wants 99% code. Every project should be given the earnest effort that it deserves, and nothing should be done half-heartedly. If there isn't enoguh time for perfect code, the project shouldn't begin in the first place. If he's worried about efficiency, remind him that a lot of buggy code is not as good as some code that works perfectly. Release in small interations of working software. Remind him about the cost of rework and how you'll eventually be making changes and pushing code for a project that has already gone live.
 
 <div name="Q8"></div>
 ### Q8. Can't we just manually test everything?
 Manually testing is easy for incredibly small projects, but as the codebase grows manual testing quickly becomes time-consuming, expensive, error-prone, and just plan infeasible. You can't take advantage of all the browsers on Sauce Labs, and you get any automatically generated reports from manual testing. Manual testing should only really be used as a last resort and a means for exposing useful exploratory tests (that could then be automated once found).
 
 <div name="Q9"></div>
-### Q9. Will the theory of Triplex Testing work for [insert favorite platform here]?
+### Q9. Will the theory of UGAT work for [insert favorite platform here]?
 Yes! Although in this guidebook I focused on JavaScript and AngularJS, the theory of combining acceptance, unit, and e2e tests can be applied to virtually any front-end platform, and even backend software as well! 
 
 <div name="Q10"></div>
