@@ -23,11 +23,11 @@ Table of Contents
  - [Part 2: The Two Core Types of Automated Tests in AngularJS](#The Two Core Types of Automated Tests)
   - [The Duality of Perfect Code](#The Duality of Perfect Code)
   - [UI Tests](#UI Tests)
-  - [Running Unit Tests](#[Running Unit Tests)
-  - [The Code Coverage Report](#[The Code Coverage Report)
-  - [Unit Tests](#Unit Tests)
   - [Running UI Tests](#Running UI Tests)
-  - [The UI Test Report](#[The UI Test Report)
+  - [The Code Coverage Report](#The Code Coverage Report)
+  - [Unit Tests](#Unit Tests)
+  - [Running Unit Tests](#Running Unit Tests)
+  - [The Unit Test Report](#[The Unit Test Report)
  - [Part 3: Acceptance Tests](#Acceptance Tests) 
   - [What Are Acceptance Tests](#What Are Acceptance Tests)
   - [Cucumberizing Your Tests](#Cucumberizing Your Tests)
@@ -170,6 +170,37 @@ What does it mean for code to be perfect? I like to this of two separate pieces 
 
 It's vital to get both sides right. 
 
+
+<div name="UI Tests"></div>
+### UI Tests
+<img src="./images/karma.png" height="50"><img src="./images/protractor.png" height="50"> <img src="./images/mocha-chai.png" height="50">
+
+These are tests that do hit external endpoints. Normally, we set these up in a separate protractor.conf.js file. Althoguh we use protractor for these tests, they are not as concerned with simulating an actual user interacting with the application. These tests are solely with interacting with external resources to ensure that they work as expected. These tests could do such things like check to see if files exist in a remote location, check that any random transaction works for your current database instance, check that saving and retrieving data from the file system works, etc. this is also the place where you might put exploratory tests (tests that try to expose bugs) or other types of stress tests.
+
+
+<div name="Running UI Tests"></div>
+### Running UI Tests
+Make sure you have protractor:
+`npm install protractor --save-dev`
+
+Ui tests are normally run with some type of Selenium browser automation tool, and for AngularJS we use the awesome Protractor which gives us a JavaScript wrapper api around the Selenium WebDriver. We just need to add a protractor config file to our project. Here's an example of a simple protractor config file:
+
+
+We can then run it liek this:
+`./node_modules/protractor/bin/protractor protractir.config.js`
+
+ 
+<div name="The UI Test Report"></div>
+### The UI Test Report
+Reports for your UI tests are great for conveying how progress is going in fine details. Also, having a nice report page to look at makes debugging much easier and comfier. I'm been using ___ library to visualize the protractor reports. Just add this block of code to your protractor config file:
+
+```
+TODO
+```
+
+This will create the report in ___.
+
+
 <div name="Unit Tests"></div>
 ### Unit Tests
 <img src="./images/karma.png" height="47"><img src="./images/jasmine.png" height="50"> <img src="./images/mocha-chai.png" height="50">
@@ -201,35 +232,6 @@ coverageReporter: {
       dir : 'coverage/'
     },
 ```
-
-<div name="UI Tests"></div>
-### UI Tests
-<img src="./images/karma.png" height="50"><img src="./images/protractor.png" height="50"> <img src="./images/mocha-chai.png" height="50">
-
-These are tests that do hit external endpoints. Normally, we set these up in a separate protractor.conf.js file. Althoguh we use protractor for these tests, they are not as concerned with simulating an actual user interacting with the application. These tests are solely with interacting with external resources to ensure that they work as expected. These tests could do such things like check to see if files exist in a remote location, check that any random transaction works for your current database instance, check that saving and retrieving data from the file system works, etc. this is also the place where you might put exploratory tests (tests that try to expose bugs) or other types of stress tests.
-
-
-<div name="Running UI Tests"></div>
-### Running UI Tests
-Make sure you have protractor:
-`npm install protractor --save-dev`
-
-Ui tests are normally run with some type of Selenium browser automation tool, and for AngularJS we use the awesome Protractor which gives us a JavaScript wrapper api around the Selenium WebDriver. We just need to add a protractor config file to our project. Here's an example of a simple protractor config file:
-
-
-We can then run it liek this:
-`./node_modules/protractor/bin/protractor protractir.config.js`
-
- 
-<div name="The UI Test Report"></div>
-### The UI Test Report
-Reports for your UI tests are great for conveying how progress is going in fine details. Also, having a nice report page to look at makes debugging much easier and comfier. I'm been using ___ library to visualize the protractor reports. Just add this block of code to your protractor config file:
-
-```
-TODO
-```
-
-This will create the report in ___.
 
 
 
