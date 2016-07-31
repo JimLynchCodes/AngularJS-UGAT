@@ -70,7 +70,7 @@ Table of Contents
  - [Part 7: Official UGAT Projects](#Official UGAT Projects)
   - [NG-NJ](#NG-NJ)
  - [Part 8: Closing Thoughts](#Closing Thoughts)
-  - [The Mythical "Fourth Plex"](#The Mythical Fourth Plex)
+  - [Other Types of Testing](#Other Types of Testing)
   - [Laid Back Perfectionism](#Laid Back Perfectionism)
   - [Why "Test Your Own Code" Is a Terrible Policy](#Why Test Your Own Code Is a Terrible Policy)
   - [Triplex Testing and the V-Model](#Triplex Testing and the V-Model)
@@ -688,12 +688,12 @@ This is the official home page for NG-NJ. This site began as a side project by J
 
 
 <div name="Closing Thoughts"></div>
-## Part 7: Closing Thoughts
+## Part 8: Closing Thoughts
 
 
-<div name="The Mythical Fourth Test"></div>
-### The Mythical "Fourth Type" of Automates Test
-Triplex testing is based on the three core types of automated testing: acceptance tests, e2e tests, and unit tests. Armed with these, you're capable of incredibly solid coverage of your entire application. Often the unsual tests such as exploratory and smoke tests as grouped into the e2e testing category (as they should be). However, there are times when another method of automated testing emerges that doesn't fit into any of the three categories, and this is sometimes referred to as, "a fourth plex". For example,  [percy.io](https://percy.io/) is a tool for "visual regression testing" that can alert you of any unwanted visual changes from css or anything else. As new tools emerge and you find use cases for them in your work it would be silly not to take advantage of them. Just keep the core theories of Triplex testing in mind and view and fourth plex as an additional weapon in your automated testing arnesal.
+<div name="Other Types of Testing"></div>
+### Other Types of Testing
+UGAT is based on the three core types of automated testing: acceptance tests, e2e tests, and unit tests. Armed with these, you're capable of incredibly solid coverage of your entire application. Often the unsual tests such as exploratory and smoke tests as grouped into the e2e testing category (as they should be). However, there are times when another method of automated testing emerges that doesn't fit into any of the three categories, and this is sometimes referred to as, "a fourth plex". For example,  [percy.io](https://percy.io/) is a tool for "visual regression testing" that can alert you of any unwanted visual changes from css or anything else. As new tools emerge and you find use cases for them in your work it would be silly not to take advantage of them. Just keep the core theories of Triplex testing in mind and view and fourth plex as an additional weapon in your automated testing arnesal.
 
 
 <div name="Laid Back Perfectionism"></div>
@@ -723,8 +723,16 @@ Use a new protractor configuration file that is set up basically just like your 
 
 <div name="UGAT Community Groups"></div>
 ### UGAT Community Groups
-Please join our facebook group here(!!): [https://www.facebook.com/groups/triplextesting/](#https://www.facebook.com/groups/triplextesting/)
+Please join in the UGAT community!
 
+Facebook UGAT Group:
+[https://www.facebook.com/groups/ugat/](#https://www.facebook.com/groups/ugat/)
+
+Linkedin BDD JavaScript Group:
+[https://www.linkedin.com/groups/8547685](#https://www.linkedin.com/groups/8547685)
+
+NG-NJ AngularJS Meetup Group:
+[https://www.meetup.com/ng-nj-meetup/](#https://www.meetup.com/ng-nj-meetup/)
 
 <div name="The Jasmine Vs. Chai Debate"></div>
 ### The Jasmine Vs. Chai Debate
