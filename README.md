@@ -90,9 +90,9 @@ Table of Contents
   - [Q7. My boss says we don't have enough time for testing. What should I do?](#Q7)
   - [Q8. Q8. Can't we just manually test everything?](#Q8)
   - [Q9. Will the theory of Triplex Testing work for [insert favorite platform here]?](#Q9)
+  - [Q10. Why can't we use regular Cucumber.js?](#Q10)
  - [Part 10: Works Cited](#Works Cited)
  - [Part 11: Credits](#Credits)
-
 
 
 <div name="Intro to UGAT"></div>
@@ -163,7 +163,12 @@ Automated testing for most AngularJs apps fall into one of two categories: unit 
 
 <div name="The Duality of Perfect Code"></div>
 ### The Duality of Perfect Code
-TODO
+What does it mean for code to be perfect? I like to this of two separate pieces that go into building perfect code. The first is *"building the software right"* which means building software that is free of bugs, doesn't crash, and is sound from a software architecture point of view. This is often testing with unit tests of low level ui tests. It should be noted though that even 100% coverage on your unit test won't gaurentee success. You still need to be creating something that is useful, provides valu to the users, and solves the business problem that it was meant to adress in the first place. This is what we mean by, *building the right software". This is the central focus of acceptance tests and exectutable cucumber specifications. 
+
+<img src="./images/yin-yang.png" height="300">
+
+
+It's vital to get both sides right. 
 
 <div name="Unit Tests"></div>
 ### Unit Tests
@@ -174,11 +179,28 @@ Ahh, the unit tests. Incorporating heavy Protractor usage for E2e and acceptance
 
 <div name="Running Unit Tests"></div>
 ### Running Unit Tests
-TODO
+You must have karma installed:
+`npm install karma --save-dev
+
+You will also need a karma configuration file. Here's an example of one:
+
+
+Unit tests are run through karma, a command line tool. You can go into your shell and type this to start running karma with the provided config file:
+
+`./node_modules/karma/bin/karma start karma.config.js`
+
+Some people also like to set up gulp scripts for this.
 
 <div name="The Code Coverage Report"></div>
 ### The Code Coverage Report
-TODO
+The code coverage report is a key artifact throughout the development process. The coverage reports tell you exactly what lines of your sources code are being tested by unit tests and what lines aren't. This is incredibly helpful since it not only shows you where you need to beef up your test collection, but is also makes blatantly obvious unused code that can be safely deleted. And it's pretty easy to add to your peroject. Just put this block in your karma config file:
+
+```
+coverageReporter: {
+      type : 'html',
+      dir : 'coverage/'
+    },
+```
 
 <div name="UI Tests"></div>
 ### UI Tests
@@ -189,12 +211,27 @@ These are tests that do hit external endpoints. Normally, we set these up in a s
 
 <div name="Running UI Tests"></div>
 ### Running UI Tests
-TODO
+Make sure you have protractor:
+`npm install protractor --save-dev`
+
+Ui tests are normally run with some type of Selenium browser automation tool, and for AngularJS we use the awesome Protractor which gives us a JavaScript wrapper api around the Selenium WebDriver. We just need to add a protractor config file to our project. Here's an example of a simple protractor config file:
+
+
+We can then run it liek this:
+`./node_modules/protractor/bin/protractor protractir.config.js`
 
  
 <div name="The UI Test Report"></div>
 ### The UI Test Report
+Reports for your UI tests are great for conveying how progress is going in fine details. Also, having a nice report page to look at makes debugging much easier and comfier. I'm been using ___ library to visualize the protractor reports. Just add this block of code to your protractor config file:
+
+```
 TODO
+```
+
+This will create the report in ___.
+
+
 
 ---
 
@@ -203,11 +240,15 @@ TODO
 
 <div name="What Are Acceptance Tests"></div>
 ### What Are Acceptance Tests
-TODO
+Acceptance tests extend TDD to business goals. 
 
 <div name="Cucumberizing Your Tests"></div>
 ### Cucumberizing Your Tests
-TODO
+This has to to with the fact that you need to use 'protractor-cucumber-framework' (or some equivalent) for acceptance tests style ui/e2e tests and 'karma-cucumber-js' (or an equivalent framework) for acceptance style tests implemented like unit tests. We sometimes refer to these acceptance test versions as "cucumberized" since they incorpoarte the cucumber.js framework. 
+
+
+
+
 
 <div name="BDD Without Cucumber"></div>
 ### BDD Without Cucumber
@@ -739,6 +780,10 @@ Manually testing is easy for incredibly small projects, but as the codebase grow
 <div name="Q9"></div>
 ### Q9. Will the theory of Triplex Testing work for [insert favorite platform here]?
 Yes! Although in this guidebook I focused on JavaScript and AngularJS, the theory of combining acceptance, unit, and e2e tests can be applied to virtually any front-end platform, and even backend software as well! 
+
+<div name="Q10"></div>
+### Q10. Why can't we use regular Cucumber.js?
+The regular cucumber.js project will execute feature files that are connected to step defintion files, but once you want to do something interesting in your step definitions you run into problems. Whether you're doing unit tests or ui/e2e tests, there is some setup needed in order for the tests of your AngularJS application to work properly. For this reason we need to use the *cucumberized* versions of both karma and protractor.  
 
 <div name="Works Cited"></div>
 ## Works Cited 
