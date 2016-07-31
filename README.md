@@ -97,10 +97,11 @@ Table of Contents
  - [Part 10: Works Cited](#Works Cited)
  - [Part 11: Credits](#Credits)
 
+---
 
 <div name="Intro to UGAT"></div>
 ## Part 1: Intro to UGAT
----
+
 <div name="history"></div>
 ### History of UGAT
 
@@ -573,6 +574,7 @@ The Living Documentation that is generaeted by your test runners is the key to t
 Aslak Hellesoy calls cucumber the "most misunderstood communication tool". 
 
 ---
+
 <div name="Reporting"></div>
 ## Part 6: UGAT Reports
 The type of reports we recommend in Triplex Testing are *generated* from the code, specifically from the terst runners. These runners will output information about each test, it's name, all the code it, whether it's passing or failing, etc. into a json object. Many open-source and private report templates have been developed to view and even interact with the json output. The report html and css are just static files that act as a shell or skeleton which you point to your json output file.
@@ -612,6 +614,8 @@ The key thing to realize is that the developers never need to stop what they are
 <div name="Meetings with The Boss"></div>
 ### Meetings with "The Boss"
 The leadership, project sponsors, owners, and bosses of you, the lead developer, want to know periodically that progress is being made towards completion of the project and that there is a clear path for the future ahead. That's perfectly acceptable. This is perfectly illustrated with a cucumber report such as [this one](http://htmlpreview.github.io/?https://github.com/gkushang/grunt-cucumberjs/blob/cucumber-reports/test/cucumber-reports/cucumber-report-bootstrap.html). Once everyone's code is merged the script to generate the cucumber report is run again (or automatically run on your CI server and hosted to an internal url) you can just walk into the meeting with "the boss" with the two of you looking at the cucumber report. Ideally you want to say something like, "Last week we had 20 acceptance tests (aka gherkin scenarios) of 80 passing, 1 failing, and the rest unimplemented. Now week have 30 acceptance tests passing, 0 failing, and the est unimplemented." Of course of accpetance test may be much for difficult and/ or time consuming to implement thatn another, and that does't really come thropugh too well in this report. However, this report tells you exactly what features were worked on in plain english language and whether it's working right now. If you're dealing with a more technical boss you can go into the actual methods of your code by going to your unit testing report such as this one or even your e2e reports like this one. If you have failing e2e tests that's kind of a bad thing so hopefully your e2e report is relatively boring. This is a great way to convey a ton of information; a complete snapshot of the project's development at any time. You can do this quickly and effectively and then talk about other things related to other coworkers, lunch, golf, etc. The boss can then refer back to these charts at any time after the meeting by visiting each corresponding url.
+
+---
 
 <div name="Sample Reports"></div>
 ## Part 7: Sample Reports
@@ -674,7 +678,7 @@ etc. for that sprint and future sprints.
 ---
 
 <div name="Official UGAT Projects"></div>
-## Part 7: Official UGAT Projects
+## Part 8: Official UGAT Projects
 
 Projects that are offically recognised as following UGAT methodologies.
 
@@ -687,9 +691,10 @@ Live Site: [https://ng-nj.github.io/ng-nj.org/](#https://ng-nj.github.io/ng-nj.o
 
 This is the official home page for NG-NJ. This site began as a side project by Jim Lynch. It was built on AngularJS 1.4 and was scaffolded with the Gulp-Angular yeoman generator. This was the first project to be officially recognised as an UGAT Project. 
 
+---
 
 <div name="Closing Thoughts"></div>
-## Part 8: Closing Thoughts
+## Part 9: Closing Thoughts
 
 
 <div name="Other Types of Testing"></div>
@@ -760,14 +765,12 @@ If worry and histeria are the feelings of programmers who launch code with no te
 
 <div name="UGAT Tester Certification"></div>
 ### UGAT Certification
-If you've been practicing UGAT-style Development for over a year and would like to take the official UGAT Examination for the prestigious "UGAT Tester" designation then simply open an issue on this repo and a proctor will get in touch with you. 
-
-
+If you've been practicing UGAT-style Development for over a year and would like to take the official UGAT Examination for the prestigious "UGAT Tester" designation then simply open an issue on this repo and a proctor will get in touch with you.
 
 ---
 
 <div name="FAQ"></div>
-## Part 8: Frequently Asked Questions
+## Part 10: Frequently Asked Questions
 
 <div name="Q1"></div>
 ### Q1. Is it wrong to treat low level step definitions like unit tests?
@@ -826,7 +829,7 @@ The regular cucumber.js project will execute feature files that are connected to
 ---
 
 <div name="Credits"></div>
-## Credits
+## Part 11: Credits
 
 This guide was written by <a href="https://github.com/JimTheMan">Jim Lynch</a>. Although he tried to get other people involved, no one submitted a pull request so for now it's just him. Feel free to help out and have your name added here!
 
