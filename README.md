@@ -61,7 +61,9 @@ Table of Contents
   - [Remove the Manual Testing Bottleneck](#Remove the Manual Testing Bottleneck)
   - [JIT Documentation for Development and Beyond](#JIT Documentation for Development and Beyond)
   - [Misunderstandings Are Thrashed Out Early](#Misunderstandings Are Thrashed Out Early)
- - [Part 6: Reporting](#Reporting)
+ - [Part 6: UGAT Reports](#Reporting)
+  - [Why Reports Are Extremely Important](#Why Reports Are Extremely Important)
+  - [Keeping the Reports Fresh](#Keeping the Reports Fresh)
   - [Generating Reports From the Codebase](#Generating Reports From the Codebase)
   - [Meetings with "The Boss"](#Meetings with The Boss)
   - [Sample Reports](#Sample Reports)
@@ -571,15 +573,18 @@ Aslak Hellesoy calls cucumber the "most misunderstood communication tool".
 
 ---
 <div name="Reporting"></div>
-## Part 6: Reporting
+## Part 6: UGAT Reports
 The type of reports we recommend in Triplex Testing are *generated* from the code, specifically from the terst runners. These runners will output information about each test, it's name, all the code it, whether it's passing or failing, etc. into a json object. Many open-source and private report templates have been developed to view and even interact with the json output. The report html and css are just static files that act as a shell or skeleton which you point to your json output file.
 
 
-### Reports for Non-Cucumberized Tests
+<div name="Why Reports Are Extremely Important"></div>
+## Why Reports Are Extremely Important
+TODO
 
 
-### Reports for Cucumberized Tests
-
+<div name="Keeping the Reports Fresh"></div>
+## Keeping the Reports Fresh
+TODO
 
 <div name="Generating Reports From the Codebase"></div>
 ### Generating Reports From the Codebase
