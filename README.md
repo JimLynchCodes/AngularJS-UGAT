@@ -58,8 +58,9 @@ Table of Contents
  - [Part 5: Additional Benefits of UGAT](#Additional Benefits of UGAT)
   - [Better Team Communication and Ubiquitous Language](#Better Team Communication and Ubiquitous Language)
   - [The Requirements and Code Are Always In Sync](#The Requirements and Code Are Always In Sync)
-  - [Minimize Manual Testing](#Minimize Manual Testing)
-  - [Living Documentation](#Living Documentation)
+  - [Remove the Manual Testing Bottleneck](#Remove the Manual Testing Bottleneck)
+  - [JIT Documentation for Development and Beyond](#JIT Documentation for Development and Beyond)
+  - [Misunderstandings Are Thrashed Out Early](#Misunderstandings Are Thrashed Out Early)
  - [Part 6: Reporting](#Reporting)
   - [Generating Reports From the Codebase](#Generating Reports From the Codebase)
   - [Meetings with "The Boss"](#Meetings with The Boss)
@@ -556,16 +557,17 @@ It is truly amazing how much gherkin feature files can bring a team together. Th
 ### The Requirements and Code Are Always In Sync
 One of the really nice things about using gherkin feature files instead of having some external planning software is that with gherkin your plans are always in sync with your tests, and your test are always in sync with your code. Thus, the plans stay in sync with the the code. When you plans are not directly embedded in the code it becomes easy to let the plans become out of date and brush them aside. With gherkin, these plans are executed via the command line and drive the decision for acceptance of the entire codebase. This gives the planning an importance unlike any other methodology, and they necessarily must be maintained, taken seriously, and should be considered as important as any other code for the project. 
 
-<div name="Minimize Manual Testing"></div>
-### Minimize Manual Testing
+<div name="Remove the Manual Testing Bottleneck"></div>
+### Remove the Manual Testing Bottleneck
 Manual testing can be a huge drain on time and resources. Of course you may not remove manual testing *entirely*, but not having a whole QA team of manual testers and shortening the QA time can be hugely beneficial to an organization in terms of saving potentislly burned cash and being more nimble with changes, bug fixes, and releases. In general, whenever you see an opportunity for manual testing instead try to write an automated test for it. 
 
-<div name="Living Documentation"></div>
-### Living Documentation
+<div name="JIT Documentation for Development and Beyond"></div>
+### JIT Documentation for Development and Beyond
 The Living Documentation that is generaeted by your test runners is the key to the success of BDD. This article defines it well when it describes Living Documentation as, *"a dynamic method of system documentation that provides information that is current, accurate and easy to understand".* 3 Your cucumber tests and e2e tests generate json output that can be viewed by the html and css of your reports. With Istanbul (or similar code coverae tools for non-JavaScript projects) you have living documentation for your unit tests as well. Great documentation served up nicely on a web page; you can have it without ever having to write it! I know it sounds like a dream, but it's not. Leveraging the reports as much as possible to make high level decisions is key to BDD, and help tremendously in the long run. If you're just adopting Triplex Testing remember that generating and reading these three reports is **critical**. If you're an old pro, think back to projects where you didn't have them and remember not to take them for granted!
 
-<div name="Thrash Out Misunderstandings (Early)"></div>
-### Thrash Out Misunderstandings
+<div name="Misunderstandings Are Thrashed Out Early"></div>
+### Misunderstandings Are Thrashed Out Early
+Aslak Hellesoy calls cucumber the "most misunderstood communication tool". 
 
 ---
 <div name="Reporting"></div>
