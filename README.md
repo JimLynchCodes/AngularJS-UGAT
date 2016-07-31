@@ -53,7 +53,7 @@ Table of Contents
   - [No Manual Testers](#No Manual Testers)
   - [The BAU Handoff](#The BAU Handoff)
   - [Working Effectively with Non-Cucumberized Tests](#Working Effectively with Non-Cucumberized Tests)
-  - [The Deliverables](#The Three Deliverables)
+  - [Deliverables & Artifacts](#Deliverables & Artifacts)
   - [Automating Testing is Recognising and Applying Patterns](#Automating Testing is Recognising and Applying Patterns)
  - [Part 5: Additional Benefits of Triplex Development](#Additional Benefits of Triplex Development)
   - [Better Team Communication and Ubiquitous Language](#Better Team Communication and Ubiquitous Language)
@@ -526,8 +526,8 @@ Let's be honest. Teams that can practice Triplex Testing well and can build perf
 TODO
 
 
-<div name="The Deliverables"></div>
-### The Deliverables
+<div name="Deliverables & Artifacts"></div>
+### Deliverables & Artifacts
 When practicing UGAT development well there will be many deliverables, but we can put them into three high level groups:
 
 - Clean Build: The final, minified files ready to be hosted live to the users.
