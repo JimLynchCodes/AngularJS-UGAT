@@ -801,7 +801,7 @@ Yes! Although in this guidebook I focused on JavaScript and AngularJS, the theor
 
 <div name="Q10"></div>
 ### Q10. Why can't we use regular Cucumber.js?
-The regular cucumber.js project will execute feature files that are connected to step defintion files, but once you want to do something interesting in your step definitions you run into problems. Whether you're doing unit tests or ui/e2e tests, there is some setup needed in order for the tests of your AngularJS application to work properly. For this reason we need to use the *cucumberized* versions of both karma and protractor.  
+The regular cucumber.js project will execute feature files that are connected to step defintion files, but once you want to do something interesting in your step definitions you run into problems. Whether you're doing unit tests or ui/e2e tests, there is some setup needed in order for the tests of your AngularJS application to work properly. For this reason we need to use the *cucumberized* versions of either karma and protractor depending on whether you want to implement the step definitions like units tests or UI tests.  
 
 <div name="Works Cited"></div>
 ## Works Cited 
