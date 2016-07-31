@@ -823,14 +823,14 @@ The regular cucumber.js project will execute feature files that are connected to
 
 6. Mob Programming CucumberBDD Podcast Episode: [https://cucumber.io/blog/2016/04/19/mob-programming](#https://cucumber.io/blog/2016/04/19/mob-programming)
 
+---
+
 
 ## Credits
 
-This guide was written by [Jim Lynch](#https://github.com/JimTheMan). Although he tried to get other people involved, so one submitted a pull request so for now it's just him. Feel free to help out and have your name added here!
+This guide was written by <a href="https://github.com/JimTheMan">Jim Lynch</a>. Although he tried to get other people involved, so one submitted a pull request so for now it's just him. Feel free to help out and have your name added here!
 
 ---
-
-This guide is maintained by ng-nj, the Angular Group of New Jersey.
 
 ## Disclaimer
 THIS GUIDE IS PROVIDED "AS IS" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
