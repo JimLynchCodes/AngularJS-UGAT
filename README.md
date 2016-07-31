@@ -108,8 +108,6 @@ UGAT (pronouced *ooh* like *"foo"* and *gat* like *"cat"*) is an acronym that st
 
 UGAT builds on the test-first theories of TDD (Test-Driven Development) and extends it by applying principles of BDD (Behavior-Driven Development). Thus, the testing triplex becomes a tao, or way of developing software where the result is truly transparent, agile, and just works. This guide provides a set of instructions for developing with The UGAT mindset, but it is up to you to find the tao on your own. You may or may not use the exact same tools as shown here, but hopefully you can take a way of thinking that will lead to successful testing implentations again and again.
 
-### WTF
-
 <div name="Contributing to UGAT"></div>
 ### Contributing to UGAT
 
