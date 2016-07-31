@@ -32,10 +32,9 @@ Table of Contents
   - [What Are Acceptance Tests](#What Are Acceptance Tests)
   - [Cucumberizing Your Tests](#Cucumberizing Your Tests)
   - [BDD Without Cucumber](#BDD Without Cucumber)
-  - [Overview of the Three Parts](#Overview of the Three Parts)
   - [A Gherkin Example](#A Gherkin Example)
   - [A Step Definition Example](#A Step Definition Example)
-  - [Running Acceptance Tests](#Running Acceptance Tests)
+  - [Acceptance Test Reports](#Acceptance Test Reports)
  - [Part 4: UGAT in Practice](#UGAT Practice)
   - [Where Do I Put My Files?](#Where Do I Put My Files)
   - [Don't Write Tests, Write Executable Specifications](#Don't Write Tests, Write Executable Specifications)
@@ -268,8 +267,8 @@ TODO
 ### Running Acceptance Tests
 TODO
 
-<div name="The Reports Are Alive!"></div>
-### Running Acceptance Tests
+<div name="Acceptance Test Reports"></div>
+### Acceptance Test Reports
 TODO
 
 --- 
