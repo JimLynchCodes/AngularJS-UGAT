@@ -73,12 +73,13 @@ Table of Contents
   - [Other Types of Testing](#Other Types of Testing)
   - [Laid Back Perfectionism](#Laid Back Perfectionism)
   - [Why "Test Your Own Code" Is a Terrible Policy](#Why Test Your Own Code Is a Terrible Policy)
-  - [Triplex Testing and the V-Model](#Triplex Testing and the V-Model)
+  - [UGAT and the V-Model](#UGAT and the V-Model)
   - [Effective Collaboration and Mob Programming](#Effective Collaboration and Mob Programming)
   - [Exploratory Testing](#Exploratory Testing)
   - [Triplex Testing Community Groups](#Triplex Testing Community Groups)
   - [The Jasmine Vs. Chai Debate](#The Jasmine Vs. Chai Debate)
   - [Crafting a Nice README](#Crafting a Nice README)
+  - [A Lot of Preparation Goes a Long Way](#A Lot of Preparation Goes a Long Way)
   - [The Importance of Having Conversations](#The Importance of Having Conversations)
   - [How Could It Not Be Perfect?](#How Could It Not Be Perfect?)
   - [Triplex Tester Certification](#Triplex Tester Certification)
@@ -741,6 +742,11 @@ It is unfortunate that we even have to have this "debate". Jasmine and Chai-Moch
 <div name="Crafting a Nice README"></div>
 ### Crafting a Nice README
 I know, calm down. Yes, one of the core principles of Agile development is to hate on comprehensive documentation, but there is something to be said about project with a nicely made README. For open-source projects this is particulary important because the README is often the first impression of your project. Without seeing any code at all, people want to know what's going on; what it really is. Even if your project is not open source, think about the people in the BAU team or the person who comes after you. Don't you think they would like to know what version of Angular was used, or what generartor it was scaffolded from, or at least what task runners commands are available to be run? A project root-level README.md file is a great place to communicate these things and anything else that might be helpful for another developer to know about hte project.
+
+
+<div name="A Lot of Preparation Goes a Long Way"></div>
+### A Lot of Preparation Goes a Long Way
+TODO
 
 
 <div name="The Importance of Having Conversations"></div>
