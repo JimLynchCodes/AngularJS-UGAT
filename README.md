@@ -538,8 +538,8 @@ When practicing UGAT development well there will be many deliverables, but we ca
 The important thing to note here is that any developer can provide the first two deliverables, but it's the last one that is really the crux of Triplex Testing and provides the most value in the long run. Put a lot of effort into making your automated tests a nice deliverable. You'll be glad you did!
 
 
-<div name="Automating Testing is Recognising and Applying Patterns"></div>
-### Automating Testing is Recognising and Applying Patterns
+<div name="Automating Testing as Recognizing and Applying Patterns"></div>
+### Automating Testing as Recognizing and Applying Patterns
 
 Testing is difficult, but it becomes fun at some point. Once you are comfortable with the API or your chosen front-end language and you can comfortably build stuff *without TDD*, just when front-end development becomes boring; that's when automated testing becomes fun. It's like meta-programming because in order to write the tests first in a way that makes sense you need to forsee what you need. You need to plan ahead to know that it should be a directive, that a method should be named this, take this, and return this, etc. After enough time you'll no doubt find yourself in reocurring situations where the tests look very similar to something else. Once you have it burned into your brain you won't be afraid of testing anything because not only have you done it before, but you can just go look at your previous code for the answer. Search out for things you've never written automated test for a try it. Throw in weird bells and whistles to your ride projects just to practice testing them, and when you've mastered it in AngularJs try UGAT on another platform! Once you are able to recognize the patterns in testing and gain the confidence to see anything in terms of these patterns, you become an incredibly valuable emissary of quality and efficeiency for any project and the corresponding source code itself. 
 
