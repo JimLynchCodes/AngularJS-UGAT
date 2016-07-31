@@ -27,7 +27,7 @@ Table of Contents
   - [The Code Coverage Report](#The Code Coverage Report)
   - [Unit Tests](#Unit Tests)
   - [Running Unit Tests](#Running Unit Tests)
-  - [The Unit Test Report](#The Unit Test Report)
+  - [The Code Coverage Report](#The Code Coverage Report)
  - [Part 3: Acceptance Tests](#Acceptance Tests) 
   - [What Are Acceptance Tests](#What Are Acceptance Tests)
   - [Cucumberizing Your Tests](#Cucumberizing Your Tests)
