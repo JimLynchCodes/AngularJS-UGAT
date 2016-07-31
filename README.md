@@ -825,10 +825,10 @@ The regular cucumber.js project will execute feature files that are connected to
 
 ---
 
-
+<div name="Credits"></div>
 ## Credits
 
-This guide was written by <a href="https://github.com/JimTheMan">Jim Lynch</a>. Although he tried to get other people involved, so one submitted a pull request so for now it's just him. Feel free to help out and have your name added here!
+This guide was written by <a href="https://github.com/JimTheMan">Jim Lynch</a>. Although he tried to get other people involved, no one submitted a pull request so for now it's just him. Feel free to help out and have your name added here!
 
 ---
 
