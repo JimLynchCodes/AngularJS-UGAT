@@ -55,7 +55,7 @@ Table of Contents
   - [Working Effectively with Non-Cucumberized Tests](#Working Effectively with Non-Cucumberized Tests)
   - [Deliverables & Artifacts](#Deliverables & Artifacts)
   - [Automating Testing as Recognizing and Applying Patterns](#Automating Testing as Recognizing and Applying Patterns)
- - [Part 5: Additional Benefits of Triplex Development](#Additional Benefits of Triplex Development)
+ - [Part 5: Additional Benefits of UGAT](#Additional Benefits of UGAT)
   - [Better Team Communication and Ubiquitous Language](#Better Team Communication and Ubiquitous Language)
   - [The Requirements and Code Are Always In Sync](#The Requirements and Code Are Always In Sync)
   - [Minimize Manual Testing](#Minimize Manual Testing)
@@ -545,8 +545,8 @@ Testing is difficult, but it becomes fun at some point. Once you are comfortable
 
 ---
 
-<div name="Additional Benefits of UGAT Development"></div>
-## Part 5: Additional Benefits of UGAT Development
+<div name="Additional Benefits of UGAT"></div>
+## Part 5: Additional Benefits of UGAT
 
 <div name="Better Team Communication and Ubiquitous Language"></div>
 ### Better Team Communication and Ubiquitous Language
