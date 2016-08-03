@@ -729,7 +729,7 @@ Use a new protractor configuration file that is set up basically just like your 
 
 <div name="UGAT Community Groups"></div>
 ### UGAT Community Groups
-Please join in the UGAT community!
+Don't be shy! Come join the UGAT community! :)
 
 Facebook UGAT Group:
 [https://www.facebook.com/groups/ugatdevs/](#https://www.facebook.com/groups/ugatdevs/)
