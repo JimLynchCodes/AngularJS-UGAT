@@ -732,7 +732,7 @@ Use a new protractor configuration file that is set up basically just like your 
 Please join in the UGAT community!
 
 Facebook UGAT Group:
-[https://www.facebook.com/groups/ugat/](#https://www.facebook.com/groups/ugat/)
+[https://www.facebook.com/groups/ugatdevs/](#https://www.facebook.com/groups/ugatdevs/)
 
 Linkedin BDD JavaScript Group:
 [https://www.linkedin.com/groups/8547685](#https://www.linkedin.com/groups/8547685)
