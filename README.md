@@ -48,6 +48,7 @@ Table of Contents
   - [Write Unit Tests and Code TDD Style](#Write Unit Tests and Code TDD Style)
   - [All the Browsers in All the Land](#All the Browsers in All the Land)
   - [Notes on Deployment](#Deployment)
+  - [Executing Tests in Parrallel](#Executing Tests in Parrallel)
   - [Testing On Multiple Browsers](#Testing On Multiple Browsers)
   - [Everyone Reads the Gherkin, Dev's Change the Gherkin](#Everyone Reads, Devs Change)
   - [No Manual Testers](#No Manual Testers)
@@ -69,6 +70,11 @@ Table of Contents
   - [Sample Reports](#Sample Reports)
  - [Part 7: Official UGAT Projects](#Official UGAT Projects)
   - [NG-NJ](#NG-NJ)
+ - [Part 8: Performance Testing](#Part 8: Performance Testing)
+  - [Performance Testing With Chrome Dev Tools](#Performance Testing With Chrome Dev Tools)
+  - [Performance Testing With WebPagetest](#Performance Testing With WebPagetest)
+  - [Performance Testing With Benchpress](#Performance Testing With Chrome Dev Tools)
+  - [Develop for Performance](#Develop for Performance)
  - [Part 8: Closing Thoughts](#Closing Thoughts)
   - [Other Types of Testing](#Other Types of Testing)
   - [Laid Back Perfectionism](#Laid Back Perfectionism)
@@ -495,6 +501,22 @@ One amazing tool that is available to you is Sauce Labs. This is a service that 
 ### Notes on Deployment
 We recommend a CI pipeline that will automatically run 1) your acceptance tests protrator file, 2) your e2e tests protractor file, and 3) your karma unit tests file. If you don't have a CI server set up, you could always run these three tests manually. The key is that you trust these tests so that they will continue to be run and maintained as the development unfolds. 
 
+<div name="Executing Tests in Parrallel"></div>
+### Executing Tests in Parrallel
+TODO
+
+<div name="Protractor Tests in Parrallel"></div>
+### Executing Tests in Parrallel
+TODO
+
+<div name="Karma Tests in Parrallel"></div>
+### Executing Tests in Parrallel
+TODO
+
+<div name="Cucumber Tests in Parrallel"></div>
+### Executing Tests in Parrallel
+TODO
+
 <div name="Testing On Multiple Browsers"></div>
 ### Testing On Multiple Browsers
 One key advantage of automated browser testing in that we can take the script we've developed locally and execute it on virtually *any* browser, and we can even do multiple browsers simultaneously. The for-profit company *Sauce Labs* basically runs the show in this area, and connecting to Sauce is even built into the api of Protractor! Simply update your protractor config file with this block to the service instead of running the Protractor tests manually *(note: you will need your replace the constants with your own Sauce Labs credentials)*:
@@ -692,6 +714,15 @@ Live Site: [https://ng-nj.github.io/ng-nj.org/](#https://ng-nj.github.io/ng-nj.o
 This is the official home page for NG-NJ. This site began as a side project by Jim Lynch. It was built on AngularJS 1.4 and was scaffolded with the Gulp-Angular yeoman generator. This was the first project to be officially recognised as an UGAT Project. 
 
 ---
+
+ - [Part 8: Performance Testing](#Part 8: Performance Testing)
+  - [Performance Testing With Chrome Dev Tools](#Performance Testing With Chrome Dev Tools)
+  - [Performance Testing With WebPagetest](#Performance Testing With WebPagetest)
+  - [Performance Testing With Benchpress](#Performance Testing With Chrome Dev Tools)
+  - [Develop for Performance](#Develop for Performance)
+  - 
+ 
+---  
 
 <div name="Closing Thoughts"></div>
 ## Part 9: Closing Thoughts
