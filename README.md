@@ -67,15 +67,19 @@ Table of Contents
   - [Keeping the Reports Fresh](#Keeping the Reports Fresh)
   - [Generating Reports From the Codebase](#Generating Reports From the Codebase)
   - [Meetings with "The Boss"](#Meetings with The Boss)
-  - [Sample Reports](#Sample Reports)
- - [Part 7: Official UGAT Projects](#Official UGAT Projects)
-  - [NG-NJ](#NG-NJ)
- - [Part 8: Performance Testing](#Performance Testing)
+ - [Part 7: Sample Reports](#Sample Reports)
+ - [Part 8: Deployment & DevOps](#Deployment & DevOps)
+  - [Hosting Your Test Reports](#Hosting Your Test Reports)
+  - [A CI Pipeline is Key](#A CI Pipeline is Key)
+  - [Open-Source Vs. Commercial](#Open-Source Vs. Commercial) 
+- [Part 9: Performance Testing](#Performance Testing)
   - [Performance Testing With Chrome Dev Tools](#Performance Testing With Chrome Dev Tools)
   - [Performance Testing With WebPagetest](#Performance Testing With WebPagetest)
   - [Performance Testing With Benchpress](#Performance Testing With Chrome Dev Tools)
   - [Develop for Performance](#Develop for Performance)
- - [Part 9: Closing Thoughts](#Closing Thoughts)
+- [Part 10: Official UGAT Projects](#Official UGAT Projects)
+  - [NG-NJ](#NG-NJ)
+ - [Part 11: Closing Thoughts](#Closing Thoughts)
   - [Other Types of Testing](#Other Types of Testing)
   - [Laid Back Perfectionism](#Laid Back Perfectionism)
   - [Why "Test Your Own Code" Is a Terrible Policy](#Why Test Your Own Code Is a Terrible Policy)
@@ -89,7 +93,7 @@ Table of Contents
   - [The Importance of Having Conversations](#The Importance of Having Conversations)
   - [How Could It Not Be Perfect?](#How Could It Not Be Perfect?)
   - [Triplex Tester Certification](#Triplex Tester Certification)
- - [Part 10: Frequently Asked Questions](#FAQ)
+ - [Part 12: Frequently Asked Questions](#FAQ)
   - [Q1. Is it wrong to treat low level step definitions like unit tests?](#Q1)
   - [Q2. Do I *need* to use acceptance tests?](#Q2)
   - [Q3. Do I *need* to use unit tests?](#Q3)
@@ -100,8 +104,8 @@ Table of Contents
   - [Q8. Q8. Can't we just manually test everything?](#Q8)
   - [Q9. Will the theory of Triplex Testing work for [insert favorite platform here]?](#Q9)
   - [Q10. Why can't we use regular Cucumber.js?](#Q10)
- - [Part 11: Works Cited](#Works Cited)
- - [Part 12: Credits](#Credits)
+ - [Part 13: Works Cited](#Works Cited)
+ - [Part 14: Credits](#Credits)
 
 ---
 
@@ -698,9 +702,28 @@ want to keep track of the features, examples, user stories, requirements
 etc. for that sprint and future sprints. 
 
 ---
+<div name="Deployment & DevOps"></div>
+## Part 8: Deployment & DevOps
+
+<div name="Hosting Your Test Reports"></div>
+###Hosting Your Test Reports
+TODO
+
+
+<div name="A CI Pipeline is Key"></div>
+###A CI Pipeline is Key
+TODO
+
+
+<div name="Open-Source Vs. Commercial"></div>
+###Open-Source Vs. Commercial
+TODO
+
+
+---
 
 <div name="Official UGAT Projects"></div>
-## Part 8: Official UGAT Projects
+## Part 9: Official UGAT Projects
 
 Projects that are offically recognised as following UGAT methodologies.
 
@@ -716,7 +739,7 @@ This is the official home page for NG-NJ. This site began as a side project by J
 ---
 
 <div name="Performance Testing"></div>
-## Part 8: Performance Testing
+## Part 9: Performance Testing
 
 
 <div name="Performance Testing With Chrome Dev Tools"></div>
@@ -738,7 +761,7 @@ TODO
 ---  
 
 <div name="Closing Thoughts"></div>
-## Part 9: Closing Thoughts
+## Part 10: Closing Thoughts
 
 
 <div name="Other Types of Testing"></div>
@@ -814,7 +837,7 @@ If you've been practicing UGAT-style Development for over a year and would like 
 ---
 
 <div name="FAQ"></div>
-## Part 10: Frequently Asked Questions
+## Part 11: Frequently Asked Questions
 
 <div name="Q1"></div>
 ### Q1. Is it wrong to treat low level step definitions like unit tests?
@@ -857,7 +880,7 @@ Yes! Although in this guidebook I focused on JavaScript and AngularJS, the theor
 The regular cucumber.js project will execute feature files that are connected to step defintion files, but once you want to do something interesting in your step definitions you run into problems. Whether you're doing unit tests or ui/e2e tests, there is some setup needed in order for the tests of your AngularJS application to work properly. For this reason we need to use the *cucumberized* versions of either karma and protractor depending on whether you want to implement the step definitions like units tests or UI tests.  
 
 <div name="Works Cited"></div>
-## Works Cited 
+## Part 12: Works Cited 
 1. Test Pyramid Article by Martin Fowler: [http://martinfowler.com/bliki/TestPyramid.html](#http://martinfowler.com/bliki/TestPyramid.html)
 
 2. CucumberBDD Podcast - Cucumber Anti-Patterns: [https://cucumber.io/blog/2016/05/09/cucumber-antipatterns](#https://cucumber.io/blog/2016/05/09/cucumber-antipatterns)
@@ -873,7 +896,7 @@ The regular cucumber.js project will execute feature files that are connected to
 ---
 
 <div name="Credits"></div>
-## Part 11: Credits
+## Part 13: Credits
 
 This guide was written by <a href="https://github.com/JimTheMan">Jim Lynch</a>. Although he tried to get other people involved, no one submitted a pull request so for now it's just him. Feel free to help out and have your name added here!
 
