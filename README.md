@@ -70,18 +70,18 @@ Table of Contents
   - [Sample Reports](#Sample Reports)
  - [Part 7: Official UGAT Projects](#Official UGAT Projects)
   - [NG-NJ](#NG-NJ)
- - [Part 8: Performance Testing](#Part 8: Performance Testing)
+ - [Part 8: Performance Testing](#Performance Testing)
   - [Performance Testing With Chrome Dev Tools](#Performance Testing With Chrome Dev Tools)
   - [Performance Testing With WebPagetest](#Performance Testing With WebPagetest)
   - [Performance Testing With Benchpress](#Performance Testing With Chrome Dev Tools)
   - [Develop for Performance](#Develop for Performance)
- - [Part 8: Closing Thoughts](#Closing Thoughts)
+ - [Part 9: Closing Thoughts](#Closing Thoughts)
   - [Other Types of Testing](#Other Types of Testing)
   - [Laid Back Perfectionism](#Laid Back Perfectionism)
   - [Why "Test Your Own Code" Is a Terrible Policy](#Why Test Your Own Code Is a Terrible Policy)
   - [UGAT and the V-Model](#UGAT and the V-Model)
   - [Effective Collaboration and Mob Programming](#Effective Collaboration and Mob Programming)
-  - [Exploratory Testing](#Exploratory Testing)
+  - [Exploratory & Usability Testing](#Exploratory & Usability Testing)
   - [Triplex Testing Community Groups](#Triplex Testing Community Groups)
   - [The Jasmine Vs. Chai Debate](#The Jasmine Vs. Chai Debate)
   - [Crafting a Nice README](#Crafting a Nice README)
@@ -89,7 +89,7 @@ Table of Contents
   - [The Importance of Having Conversations](#The Importance of Having Conversations)
   - [How Could It Not Be Perfect?](#How Could It Not Be Perfect?)
   - [Triplex Tester Certification](#Triplex Tester Certification)
- - [Part 9: Frequently Asked Questions](#FAQ)
+ - [Part 10: Frequently Asked Questions](#FAQ)
   - [Q1. Is it wrong to treat low level step definitions like unit tests?](#Q1)
   - [Q2. Do I *need* to use acceptance tests?](#Q2)
   - [Q3. Do I *need* to use unit tests?](#Q3)
@@ -100,8 +100,8 @@ Table of Contents
   - [Q8. Q8. Can't we just manually test everything?](#Q8)
   - [Q9. Will the theory of Triplex Testing work for [insert favorite platform here]?](#Q9)
   - [Q10. Why can't we use regular Cucumber.js?](#Q10)
- - [Part 10: Works Cited](#Works Cited)
- - [Part 11: Credits](#Credits)
+ - [Part 11: Works Cited](#Works Cited)
+ - [Part 12: Credits](#Credits)
 
 ---
 
@@ -715,13 +715,26 @@ This is the official home page for NG-NJ. This site began as a side project by J
 
 ---
 
- - [Part 8: Performance Testing](#Part 8: Performance Testing)
-  - [Performance Testing With Chrome Dev Tools](#Performance Testing With Chrome Dev Tools)
-  - [Performance Testing With WebPagetest](#Performance Testing With WebPagetest)
-  - [Performance Testing With Benchpress](#Performance Testing With Chrome Dev Tools)
-  - [Develop for Performance](#Develop for Performance)
-  - 
- 
+<div name="Performance Testing"></div>
+## Part 8: Performance Testing
+
+
+<div name="Performance Testing With Chrome Dev Tools"></div>
+### Performance Testing With Chrome Dev Tools
+TODO
+
+<div name="Performance Testing With WebPagetest"></div>
+### Performance Testing With WebPagetest
+TODO
+
+<div name="Performance Testing With Benchpress"></div>
+### Performance Testing With Benchpress
+TODO
+
+<div name="Develop for Performance"></div>
+### Develop for Performance
+TODO
+
 ---  
 
 <div name="Closing Thoughts"></div>
@@ -751,8 +764,8 @@ The V-Model is a common diagram used to describe the software lifecycle as phase
 ### Effective Collaboration and Mob Programming
 Mob programming basically takes pair programming to the next level. A group of people site around one computer. One person is the navigater explaining what should be done next, one person is the driver typing at the keyboard, and everyone else helps as needed. Every so often you rotate. This concept is mentioned in an number of agile and BDD books since it is pretty much the ultimate form of communication and collaboration in the writing of all the code. There naturally becomes a very strong ubiquitous language, colelctive code ownership, and awareness of all relevant pieces. For more on Mob Programming check out this great podcast with Woody and the CucumberBDD team.6 They do a great job of defining *wasted time* and make an excellent business case for mob programming.
 
-<div name="Exploratory Testing"></div>
-### Exploratory Testing
+<div name="Exploratory & Usability Testing"></div>
+### Exploratory & Usability Testing
 Exploratorny testing is the act of testing the software with the intent of breaking it to uncover any potential bugs. Often times professional QA testers are great at this (even better than developers) because they bring a fresh perspective and have an intuition about where faults commonly occur in software.
 
 Use a new protractor configuration file that is set up basically just like your e2e protractor file. This difference is in the type of protractor testst heat you will write here. 
