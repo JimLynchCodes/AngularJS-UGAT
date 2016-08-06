@@ -754,8 +754,26 @@ TODO
 ---  
 
 
+<div name="Official UGAT Projects"></div>
+## Part 11: Official UGAT Projects
+
+Projects that are offically recognised as following UGAT methodologies.
+
+<div name="NG-NJ"></div>
+###NG-NJ
+
+Github Repo: [https://github.com/ng-nj/ng-nj.org](#https://github.com/ng-nj/ng-nj.org)
+
+Live Site: [https://ng-nj.github.io/ng-nj.org/](#https://ng-nj.github.io/ng-nj.org/)
+
+This is the official home page for NG-NJ. This site began as a side project by Jim Lynch. It was built on AngularJS 1.4 and was scaffolded with the Gulp-Angular yeoman generator. This was the first project to be officially recognised as an UGAT Project. 
+
+
+---
+
+
 <div name="Closing Thoughts"></div>
-## Part 11: Closing Thoughts
+## Part 12: Closing Thoughts
 
 
 <div name="Other Types of Testing"></div>
@@ -836,7 +854,7 @@ If you've been practicing UGAT-style Development for over a year and would like 
 ---
 
 <div name="FAQ"></div>
-## Part 12: Frequently Asked Questions
+## Part 13: Frequently Asked Questions
 
 <div name="Q1"></div>
 ### Q1. Is it wrong to treat low level step definitions like unit tests?
