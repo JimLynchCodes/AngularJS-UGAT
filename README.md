@@ -48,7 +48,6 @@ Table of Contents
   - [Write Unit Tests and Code TDD Style](#Write Unit Tests and Code TDD Style)
   - [All the Browsers in All the Land](#All the Browsers in All the Land)
   - [Notes on Deployment](#Deployment)
-  - [Executing Tests in Parrallel](#Executing Tests in Parrallel)
   - [Testing On Multiple Browsers](#Testing On Multiple Browsers)
   - [Everyone Reads the Gherkin, Dev's Change the Gherkin](#Everyone Reads, Devs Change)
   - [No Manual Testers](#No Manual Testers)
@@ -56,44 +55,49 @@ Table of Contents
   - [Working Effectively with Non-Cucumberized Tests](#Working Effectively with Non-Cucumberized Tests)
   - [Deliverables & Artifacts](#Deliverables & Artifacts)
   - [Automating Testing as Recognizing and Applying Patterns](#Automating Testing as Recognizing and Applying Patterns)
- - [Part 5: Additional Benefits of UGAT](#Additional Benefits of UGAT)
+ - [Part 5: Executing Tests in Parrallel](#Executing Tests in Parrallel)
+  - [Protractor Tests in Parrallel](#Protractor Tests in Parrallel)
+  - [Karma Tests in Parrallel](#Karma Tests in Parrallel)
+  - [Cucumber Tests in Parrallel](#Cucumber Tests in Parrallel)
+ - [Part 6: Additional Benefits of UGAT](#Additional Benefits of UGAT)
   - [Better Team Communication and Ubiquitous Language](#Better Team Communication and Ubiquitous Language)
   - [The Requirements and Code Are Always In Sync](#The Requirements and Code Are Always In Sync)
   - [Remove the Manual Testing Bottleneck](#Remove the Manual Testing Bottleneck)
   - [JIT Documentation for Development and Beyond](#JIT Documentation for Development and Beyond)
   - [Misunderstandings Are Thrashed Out Early](#Misunderstandings Are Thrashed Out Early)
- - [Part 6: UGAT Reports](#Reporting)
+ - [Part 7: UGAT Reports](#Reporting)
   - [Why Reports Are Extremely Important](#Why Reports Are Extremely Important)
   - [Keeping the Reports Fresh](#Keeping the Reports Fresh)
   - [Generating Reports From the Codebase](#Generating Reports From the Codebase)
   - [Meetings with "The Boss"](#Meetings with The Boss)
- - [Part 7: Sample Reports](#Sample Reports)
- - [Part 8: Deployment & DevOps](#Deployment & DevOps)
+ - [Part 8: Sample Reports](#Sample Reports)
+ - [Part 9: Deployment & DevOps](#Deployment & DevOps)
   - [Hosting Your Test Reports](#Hosting Your Test Reports)
   - [A CI Pipeline is Key](#A CI Pipeline is Key)
   - [Open-Source Vs. Commercial](#Open-Source Vs. Commercial) 
- - [Part 9: Performance Testing](#Performance Testing)
+ - [Part 10: Performance Testing](#Performance Testing)
   - [Performance Testing With Chrome Dev Tools](#Performance Testing With Chrome Dev Tools)
   - [Performance Testing With WebPagetest](#Performance Testing With WebPagetest)
   - [Performance Testing With Benchpress](#Performance Testing With Chrome Dev Tools)
   - [Develop for Performance](#Develop for Performance)
- - [Part 10: Official UGAT Projects](#Official UGAT Projects)
+ - [Part 11: Official UGAT Projects](#Official UGAT Projects)
   - [NG-NJ](#NG-NJ)
- - [Part 11: Closing Thoughts](#Closing Thoughts)
+ - [Part 12: Closing Thoughts](#Closing Thoughts)
   - [Other Types of Testing](#Other Types of Testing)
   - [Laid Back Perfectionism](#Laid Back Perfectionism)
   - [Why "Test Your Own Code" Is a Terrible Policy](#Why Test Your Own Code Is a Terrible Policy)
   - [UGAT and the V-Model](#UGAT and the V-Model)
   - [Effective Collaboration and Mob Programming](#Effective Collaboration and Mob Programming)
   - [Exploratory & Usability Testing](#Exploratory & Usability Testing)
-  - [Triplex Testing Community Groups](#Triplex Testing Community Groups)
+  - [UGAT Community Groups](#UGAT Community Groups)
+  - [Static Analysis Tools](#Static Analysis Tools)
   - [The Jasmine Vs. Chai Debate](#The Jasmine Vs. Chai Debate)
   - [Crafting a Nice README](#Crafting a Nice README)
   - [A Lot of Preparation Goes a Long Way](#A Lot of Preparation Goes a Long Way)
   - [The Importance of Having Conversations](#The Importance of Having Conversations)
   - [How Could It Not Be Perfect?](#How Could It Not Be Perfect?)
   - [Triplex Tester Certification](#Triplex Tester Certification)
- - [Part 12: Frequently Asked Questions](#FAQ)
+ - [Part 13: Frequently Asked Questions](#FAQ)
   - [Q1. Is it wrong to treat low level step definitions like unit tests?](#Q1)
   - [Q2. Do I *need* to use acceptance tests?](#Q2)
   - [Q3. Do I *need* to use unit tests?](#Q3)
@@ -104,8 +108,8 @@ Table of Contents
   - [Q8. Q8. Can't we just manually test everything?](#Q8)
   - [Q9. Will the theory of Triplex Testing work for [insert favorite platform here]?](#Q9)
   - [Q10. Why can't we use regular Cucumber.js?](#Q10)
- - [Part 13: Works Cited](#Works Cited)
- - [Part 14: Credits](#Credits)
+ - [Part 14: Works Cited](#Works Cited)
+ - [Part 15: Credits](#Credits)
 
 ---
 
@@ -505,21 +509,6 @@ One amazing tool that is available to you is Sauce Labs. This is a service that 
 ### Notes on Deployment
 We recommend a CI pipeline that will automatically run 1) your acceptance tests protrator file, 2) your e2e tests protractor file, and 3) your karma unit tests file. If you don't have a CI server set up, you could always run these three tests manually. The key is that you trust these tests so that they will continue to be run and maintained as the development unfolds. 
 
-<div name="Executing Tests in Parrallel"></div>
-### Executing Tests in Parrallel
-TODO
-
-<div name="Protractor Tests in Parrallel"></div>
-### Executing Tests in Parrallel
-TODO
-
-<div name="Karma Tests in Parrallel"></div>
-### Executing Tests in Parrallel
-TODO
-
-<div name="Cucumber Tests in Parrallel"></div>
-### Executing Tests in Parrallel
-TODO
 
 <div name="Testing On Multiple Browsers"></div>
 ### Testing On Multiple Browsers
@@ -575,6 +564,7 @@ The important thing to note here is that any developer can provide the first two
 Testing is difficult, but it becomes fun at some point. Once you are comfortable with the API or your chosen front-end language and you can comfortably build stuff *without TDD*, just when front-end development becomes boring; that's when automated testing becomes fun. It's like meta-programming because in order to write the tests first in a way that makes sense you need to forsee what you need. You need to plan ahead to know that it should be a directive, that a method should be named this, take this, and return this, etc. After enough time you'll no doubt find yourself in reocurring situations where the tests look very similar to something else. Once you have it burned into your brain you won't be afraid of testing anything because not only have you done it before, but you can just go look at your previous code for the answer. Search out for things you've never written automated test for a try it. Throw in weird bells and whistles to your ride projects just to practice testing them, and when you've mastered it in AngularJs try UGAT on another platform! Once you are able to recognize the patterns in testing and gain the confidence to see anything in terms of these patterns, you become an incredibly valuable emissary of quality and efficeiency for any project and the corresponding source code itself. 
 
 ---
+
 
 <div name="Additional Benefits of UGAT"></div>
 ## Part 5: Additional Benefits of UGAT
@@ -806,6 +796,11 @@ Linkedin BDD JavaScript Group:
 
 NG-NJ AngularJS Meetup Group:
 [https://www.meetup.com/ng-nj-meetup/](#https://www.meetup.com/ng-nj-meetup/)
+
+- [Static Analysis Tools](#Static Analysis Tools)
+<div name="Static Analysis Tools"></div>
+### Static Analysis Tools
+TODO
 
 <div name="The Jasmine Vs. Chai Debate"></div>
 ### The Jasmine Vs. Chai Debate
