@@ -48,6 +48,7 @@ Table of Contents
   - [Write Unit Tests and Code TDD Style](#Write Unit Tests and Code TDD Style)
   - [All the Browsers in All the Land](#All the Browsers in All the Land)
   - [Notes on Deployment](#Deployment)
+  - [Automated Build](#utomated Build)
   - [Testing On Multiple Browsers](#Testing On Multiple Browsers)
   - [Everyone Reads the Gherkin, Dev's Change the Gherkin](#Everyone Reads, Devs Change)
   - [No Manual Testers](#No Manual Testers)
@@ -55,6 +56,8 @@ Table of Contents
   - [Working Effectively with Non-Cucumberized Tests](#Working Effectively with Non-Cucumberized Tests)
   - [Deliverables & Artifacts](#Deliverables & Artifacts)
   - [Automating Testing as Recognizing and Applying Patterns](#Automating Testing as Recognizing and Applying Patterns)
+  - [Karma Testing Patterns](#Karma Testing Patterns)
+  - [Protractor Testing Patterns](#Protractor Testing Patterns)
  - [Part 5: Executing Tests in Parrallel](#Executing Tests in Parrallel)
   - [Protractor Tests in Parrallel](#Protractor Tests in Parrallel)
   - [Karma Tests in Parrallel](#Karma Tests in Parrallel)
@@ -510,6 +513,10 @@ One amazing tool that is available to you is Sauce Labs. This is a service that 
 ### Notes on Deployment
 We recommend a CI pipeline that will automatically run 1) your acceptance tests protrator file, 2) your e2e tests protractor file, and 3) your karma unit tests file. If you don't have a CI server set up, you could always run these three tests manually. The key is that you trust these tests so that they will continue to be run and maintained as the development unfolds. 
 
+<div name="Automated Build"></div>
+### Automated Build
+Automated Build
+
 
 <div name="Testing On Multiple Browsers"></div>
 ### Testing On Multiple Browsers
@@ -563,6 +570,19 @@ The important thing to note here is that any developer can provide the first two
 ### Automating Testing as Recognizing and Applying Patterns
 
 Testing is difficult, but it becomes fun at some point. Once you are comfortable with the API or your chosen front-end language and you can comfortably build stuff *without TDD*, just when front-end development becomes boring; that's when automated testing becomes fun. It's like meta-programming because in order to write the tests first in a way that makes sense you need to forsee what you need. You need to plan ahead to know that it should be a directive, that a method should be named this, take this, and return this, etc. After enough time you'll no doubt find yourself in reocurring situations where the tests look very similar to something else. Once you have it burned into your brain you won't be afraid of testing anything because not only have you done it before, but you can just go look at your previous code for the answer. Search out for things you've never written automated test for a try it. Throw in weird bells and whistles to your ride projects just to practice testing them, and when you've mastered it in AngularJs try UGAT on another platform! Once you are able to recognize the patterns in testing and gain the confidence to see anything in terms of these patterns, you become an incredibly valuable emissary of quality and efficeiency for any project and the corresponding source code itself. 
+
+<div name="Karma Testing Patterns"></div>
+### Karma Testing Patterns
+TODO
+<a href="https://github.com/daniellmb/angular-test-patterns">https://github.com/daniellmb/angular-test-patterns</a>
+
+<div name="Protractor Testing Patterns"></div>
+### Protractor Testing Patterns
+TODO
+<a href="https://github.com/selfrefactor/Protractor-testing-patterns">https://github.com/selfrefactor/Protractor-testing-patterns</a>
+
+
+
 
 ---
 
