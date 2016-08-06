@@ -21,6 +21,7 @@ Table of Contents
   - [It Takes Discipline; a Lot of It](#It Takes Discipline; a Lot of It)
   - [How Am I So Excited About Testing?](#How Am I So Excited About Testing?)
   - [Setting Up for Development in AngularJS](#Setting Up for Development in AngularJS) 
+  - [Scaffolding a Project](#Scaffolding a Project)
  - [Part 2: The Two Core Types of Automated Tests in AngularJS](#The Two Core Types of Automated Tests)
   - [The Duality of Perfect Code](#The Duality of Perfect Code)
   - [UI Tests](#UI Tests)
@@ -162,39 +163,44 @@ Software is an interesting thing in that it needs to be 100% perfect or else it 
  <div name="Can Testing Show An Absence of Defects"></div>
 ### Can Testing Show An Absence of Defects?
 
- No Amount of Testing Can prove no bugs from ISTQB, "Testing can shows the presence of defects: Testing can show that defects are present, but cannot prove that there are no defects". Since you could always be "missing one test" that *would* fail because of the bug in the system. If you can show that you have covered all situatinos with tests (a somewhat impossible goal) *and* all of those tests are passing then you can indeed be certain that that the software is absent of bugs. It's sort of a cop-out answer though, since the next question is, "well how do we know if we are missing certain tests?". Sometimes you can't foresee them, and you retrospectively write the tests to expose the bugs, but sometimes the missing or incorrect tests stem frmo not fully understand the requirements in the first place. 
+ No Amount of Testing Can prove no bugs. Here's a quote from <a href="http://www.istqb.org/">ISTQB</a>, "Testing can shows the presence of defects: Testing can show that defects are present, but cannot prove that there are no defects". Since you could always be "missing one test" that *would* fail because of the bug in the system. If you can show that you have covered all situatinos with tests (a somewhat impossible goal) *and* all of those tests are passing then you can indeed be certain that that the software is absent of bugs. It's sort of a cop-out answer though, since the next question is, "well how do we know if we are missing certain tests?". And really, you can't sometimes, and you just need to retrospectively write the tests to expose the bugs. 
  
+ 
+ <div name="The Duality of Perfect Code"></div>
+### The Duality of Perfect Code
+What does it mean for code to be perfect? I like to this of two separate pieces that go into building perfect code. The first is *"building the software right"* which means building software that is free of bugs, doesn't crash, and is sound from a software architecture point of view. This is often testing with unit tests or low level ui tests. As programmers, we often focus *only* on this side which is a mistake if you really want the business to win and the software to be well done. It should be noted though that even 100% coverage on your unit tests and ui tests of all the functional things won't *gaurantee* success. You still need to be creating something that is useful, provides valu to the users, and solves the business problem that it was meant to address in the first place. This is what we mean by *building the right software". This is the central focus of acceptance tests and exectutable cucumber specifications. 
+
+<img src="./images/yin-yang.png" height="300">
+
+
+It's vital to get both sides right. 
  
 <div name="It Takes Discipline; a Lot of It"></div>
 ### It Takes Discipline; a Lot of It
- 
-Using automated tests *can* unlock the freedom to be stress free and continuously push code that works pefectly. BUT, it doesn't happen automatically. Only after you truly master all aspects of UGAT and experience it firsthand a few times will you really be able to do it well and make it look easy. Even the creator Jim Lynch isn't at that level! Doing BDD well all the way through is **hard**, and you really have to force yourself to write the specs tests first. Don't break down or give up, and don't let your team give up either. Coach them yourself if you have to, or have a dedicated SET (software Engineer in Test) to make sure the testing isn't neglected. Push through, give it 100% effort, and try to make it work. If you fail, do retrospectives and figure out what went wrong. 
+Using automated tests *can* unlock the freedom to be stress free and continuously push code that works pefectly. BUT, it doesn't happen automatically. Only after you truly master all aspects of UGAT and experience it firsthand many times will you really be able to do it well and eventually maybe even make it look easy. Even the creator Jim Lynch isn't at that level! Doing BDD well all the way through is **hard**, and you really have to force yourself to write the tests first. Don't break down or give up, and don't let your team give up either. Coach them yourself if you have to, or have a dedicated SET (software Engineer in Test) on the team to make sure the testing isn't neglected. Push through, give it 100% effort, and try to make it work. If you fail, be sure do retrospectives. Try to figure out what went wrong and work to prevent it next time.
 
 
 <div name="How Am I So Excited About Testing?"></div>
 ### How Am I So Excited About Testing?
-Testing is a means to an end. What I'm really after is a pattern for developing software that allows you to frequently push software *that you know works* quickly, with better accuracy, and with less stress. Without automated tests you are *always* stressing about code in production (at least I am, anyway). When testers are used as bug-spotters then you as a developer look bad when they find bugs. Without automated you are manually checking that each requirement is satified which is error-prone and a huge waste of time that grows exponentially as progress is made and must be repeated over and over. Without *automating* your tests you'll never be as nimble and able to push code as quickly, never be able to throw your tests on a CI server, to run your tests against various browsers... Automated testing done right frees you from your "go-live fears" and allows you to quickly and consistenly push code that you can be confident works perfectly. To me, *that* is pretty exciting. 
+Testing is a means to an end. What I'm really after is a pattern for developing software that allows you to frequently push software *that you know works* quickly, with better accuracy, and with less stress. Without automated tests you are *always* stressing about code in production (at least I am, anyway). When testers are used as bug-spotters then you as a developer look bad when they find bugs. When testers are used this way they don't increase the quality of the project or help move it forward. Rather, they are used as a step in the deployment process which makes it a doubly terrible (maybe even more)! Instead, testers should be involved in *Three Amigos* meetings and writing automated tests. Some also specialize in things like setting up the pipeline, writing Protractor tests, or niche JavaScript libraries. Critics of UGAT sometimes accuse me of wants to get rid of the traditional QA department and replace it with more developers, and in some ways that's true. I believe that the "testers" should really just be *automated test-focused developers* who are programming almost the whole time they are on the job. Manual testing for exporatory and usbility purposes should be so little that it does not require a person doing it full-time so you really should not need a dedicated "manual tester". Manually checking that each requirement is satified is error-prone and a huge waste of time that grows exponentially as progress is made and must be repeated over and over. Without *automating* your tests you'll never be as nimble and able to push code as quickly, never be able to throw your tests on a CI server, or to generate reports that you can then host for all to see... Automated testing done right frees you from your "go-live fears", provides epic communication and team-wide understanding, and  allows you to quickly and consistenly push code that you can be confident works perfectly. To me, *that* is pretty exciting. 
 
 
 - [Setting Up for Development in AngularJS](#Setting Up for Development in AngularJS)
 <div name="Setting Up for Development in AngularJS"></div>
 ### Setting Up for Development in AngularJS
-You can develop AngularJS application on a Mac, Windows, or Linux computer. You pretty much only need two software tools for development: a code editor and a command shell. For a code editor I personally prefer WebStorm, but there are many other great choices including Sublime Text, Visual Studio, Atom, and Notepad++. It really just comes down to preference. You will also need a command shell to run all of your scripts for serving your site in the browser, creating a production build, running all of your various tests, and deploying. On Mac and Linux machines, the standard terminal or ITerm 2. On Windows, you can use cmd or your choice on command shell. I would recommend using Bash on Windows. The key benefit with using shell commands is that they easily translate over to a commands for a server to run as a continuous integration pipeline.
+You can develop AngularJS application on a Mac, Windows, or Linux computer, and you pretty much only need two software tools for development: a code editor and a command shell. For a code editor I personally prefer WebStorm, but there are many other great choices including Sublime Text, Visual Studio, Atom, and Notepad++. It really just comes down to preference. You will also need a command shell to run all of your scripts for serving your site in the browser, creating a production build, running all of your various tests, deploying, and anything else you wish to automate. On Mac and Linux machines, the standard terminal or ITerm 2 is fine. On Windows, you can use cmd or your choice on command shell. I would recommend using Bash on Windows. The key benefit with using shell commands is that they are fast and easily translate over to a commands for a server to run as a continuous integration pipeline.
+
+
+<div name="Scaffolding a Project"></div>
+### Scaffolding a Project
+The Official UGAT Projects section of this document shows examples of open-source project set up in a way that follows along with what I recommend here. By *cucumberizing* your test runners, hosting your test reports, and setting up a solid automated CI pipline you can take pretty much any project to UGAT status as it's more of a *development mindset* than a few npm packages. For a normal AngularJS scaffold I would recommend <a href="https://github.com/Swiip/generator-gulp-angular/">Gulp-Angular</a> or <a href="https://github.com/FountainJS/generator-fountain-webapp">FountainJS</a>. I'm also working on a super simplified "UGAT Shell" project for learning purposes.
+
  
  ---
 
 <div name="The Two Core Types of Automated Tests"></div>
 ## Part 2: The Two Core Types of Automated Tests
 Automated testing for most AngularJs apps fall into one of two categories: unit testing or web/ui testing. 
-
-<div name="The Duality of Perfect Code"></div>
-### The Duality of Perfect Code
-What does it mean for code to be perfect? I like to this of two separate pieces that go into building perfect code. The first is *"building the software right"* which means building software that is free of bugs, doesn't crash, and is sound from a software architecture point of view. This is often testing with unit tests of low level ui tests. It should be noted though that even 100% coverage on your unit test won't gaurentee success. You still need to be creating something that is useful, provides valu to the users, and solves the business problem that it was meant to adress in the first place. This is what we mean by, *building the right software". This is the central focus of acceptance tests and exectutable cucumber specifications. 
-
-<img src="./images/yin-yang.png" height="300">
-
-
-It's vital to get both sides right. 
 
 
 <div name="UI Tests"></div>
@@ -275,12 +281,13 @@ Acceptance tests extend TDD to business goals.
 This has to to with the fact that you need to use 'protractor-cucumber-framework' (or some equivalent) for acceptance tests style ui/e2e tests and 'karma-cucumber-js' (or an equivalent framework) for acceptance style tests implemented like unit tests. We sometimes refer to these acceptance test versions as "cucumberized" since they incorpoarte the cucumber.js framework. 
 
 
-
-
-
 <div name="BDD Without Cucumber"></div>
 ### BDD Without Cucumber
-TODO
+It should be noted that you can still follow some of the principles of BDD without actually cucumberizing your test runners. Alask Hellosey, creator of the original Cucumber test runner, says that Cucumber is, "the most misunderstood **communication** tool". The communication is critical, and it really comes down to having the Three Amigos meetings. You can do them face-to-face, in a chat room, or (maybe less efectively) over an email thread, but the point is that they happen. Once a meeting happens, it's a good idea to have something recording from that meeting that the developer can refer to later, normally some form of requirements for the application. This is exatly what Gherkin is for, and it might be more comfortable to transition the whole team to BDD by starting with writing Gherkin scenarios that are never executed, but just use as planmning / reference materials. However, keep in mind that when you don't execute the Gherkin and you don't cucumberize your test runners you miss out on a few hugely important pieces of UGAT, such as:
+ 
+ - 1) You don't get reports (ie living documentation)
+ - 2) You don't know if you code passes or fails the scenarios.
+ - 3) You can't break up large tests into smaller step definition functions.
 
 <div name="A Gherkin Example"></div>
 ### A Gherkin Example
