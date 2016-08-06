@@ -20,6 +20,7 @@ Table of Contents
   - [Can Testing Show An Absence of Defects?](#Can Testing Show An Absence of Defects)
   - [It Takes Discipline; a Lot of It](#It Takes Discipline; a Lot of It)
   - [How Am I So Excited About Testing?](#How Am I So Excited About Testing?)
+  - [Setting Up for Development in AngularJS](#Setting Up for Development in AngularJS) 
  - [Part 2: The Two Core Types of Automated Tests in AngularJS](#The Two Core Types of Automated Tests)
   - [The Duality of Perfect Code](#The Duality of Perfect Code)
   - [UI Tests](#UI Tests)
@@ -172,10 +173,13 @@ Using automated tests *can* unlock the freedom to be stress free and continuousl
 
 <div name="How Am I So Excited About Testing?"></div>
 ### How Am I So Excited About Testing?
- 
- 
- 
 Testing is a means to an end. What I'm really after is a pattern for developing software that allows you to frequently push software *that you know works* quickly, with better accuracy, and with less stress. Without automated tests you are *always* stressing about code in production (at least I am, anyway). When testers are used as bug-spotters then you as a developer look bad when they find bugs. Without automated you are manually checking that each requirement is satified which is error-prone and a huge waste of time that grows exponentially as progress is made and must be repeated over and over. Without *automating* your tests you'll never be as nimble and able to push code as quickly, never be able to throw your tests on a CI server, to run your tests against various browsers... Automated testing done right frees you from your "go-live fears" and allows you to quickly and consistenly push code that you can be confident works perfectly. To me, *that* is pretty exciting. 
+
+
+- [Setting Up for Development in AngularJS](#Setting Up for Development in AngularJS)
+<div name="Setting Up for Development in AngularJS"></div>
+### Setting Up for Development in AngularJS
+You can develop AngularJS application on a Mac, Windows, or Linux computer. You pretty much only need two software tools for development: a code editor and a command shell. For a code editor I personally prefer WebStorm, but there are many other great choices including Sublime Text, Visual Studio, Atom, and Notepad++. It really just comes down to preference. You will also need a command shell to run all of your scripts for serving your site in the browser, creating a production build, running all of your various tests, and deploying. On Mac and Linux machines, the standard terminal or ITerm 2. On Windows, you can use cmd or your choice on command shell. I would recommend using Bash on Windows. The key benefit with using shell commands is that they easily translate over to a commands for a server to run as a continuous integration pipeline.
  
  ---
 
