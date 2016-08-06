@@ -731,24 +731,8 @@ TODO
 
 ---
 
-<div name="Official UGAT Projects"></div>
-## Part 10: Official UGAT Projects
-
-Projects that are offically recognised as following UGAT methodologies.
-
-<div name="NG-NJ"></div>
-###NG-NJ
-
-Github Repo: [https://github.com/ng-nj/ng-nj.org](#https://github.com/ng-nj/ng-nj.org)
-
-Live Site: [https://ng-nj.github.io/ng-nj.org/](#https://ng-nj.github.io/ng-nj.org/)
-
-This is the official home page for NG-NJ. This site began as a side project by Jim Lynch. It was built on AngularJS 1.4 and was scaffolded with the Gulp-Angular yeoman generator. This was the first project to be officially recognised as an UGAT Project. 
-
----
-
 <div name="Performance Testing"></div>
-## Part 9: Performance Testing
+## Part 10: Performance Testing
 
 
 <div name="Performance Testing With Chrome Dev Tools"></div>
@@ -768,6 +752,7 @@ TODO
 TODO
 
 ---  
+
 
 <div name="Closing Thoughts"></div>
 ## Part 11: Closing Thoughts
