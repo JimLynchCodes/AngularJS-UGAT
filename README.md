@@ -309,11 +309,11 @@ TODO
 <div name="UGAT in Practice"></div>
 ## Part 4: UGAT in Practice
 
-This section provides some advice for using the Triplex in Practice.
+This section provides some advice for using UGAT in real projects.
 
 <div name="Don't Write Tests, Write Executable Specifications"></div>
 ### Don't Write Tests, Write Executable Specifications
-TODO
+Experts in the BDD field will often say that you should stop thinking in terms of unit tests, and think more in terms of executable specifications. I don't necessarily want you to stop thinking in terms of unit test because the cucumberized karma step definitions are pretty similar to unit tests, and you will still regular unit tests just to get your coverage up without adding uncessary scenarios. However, I think they have a valid point that you should be first thing in *business terms*. Get the scenarios down, decide whether they are to be implemented with cucumberized protracor or cucumberized karma, and then fill in any "gaps" with non-cucmberized tests. 
 
 
 <div name="The Gherkin Comes First"></div>
@@ -526,7 +526,7 @@ We recommend a CI pipeline that will automatically run 1) your acceptance tests 
 
 <div name="Automated Build"></div>
 ### Automated Build
-Automated Build
+Having an automated build is one of the fundamentals pieces to success in UGAT and really just JavaScript in general. "The Automated Build" is a fancy phrase in Agile devlopment, but most programmers I've found take it for granted as just "part of developing an AngularJS application". There are many build tools and task runners for this such as gulp, grunt, webpack, or broccoli. The automated build can refer either to the build for manually testing your application (normally a command like `gulp serve`) or to the "production build" that minifies everything and puts it in a folder, ready to be deployed (normally a command like `gulp build`).
 
 
 <div name="Testing On Multiple Browsers"></div>
