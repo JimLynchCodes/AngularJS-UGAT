@@ -132,6 +132,7 @@ UGAT builds on the test-first theories of TDD (Test-Driven Development) and exte
 This software development philosophy is really only known about in a few small circles around New Jersey (that I know of, at least). We're always open to hearing feedback from others so don't be afraid to open an issue here, even if it's just a random question. If you feel something is missing from the Guidebook start a discussion by opening an issue, and if you want to write a section that's awesome too!
 
 
+
 <div name="It's Not Specific To Angular"></div>
 ### It's Not Specific To Angular
 It should be noted that the UGAT is not something that is dependant on the Angular library. It can be applied to really any project made from html, css, and javascript which can be tested with similar web/ui testing looks like Protractor (for other platforms Selenium does the same job and for mobile apps Appium is a good choice). Likewise, virtually every programming language has it's own unit testing framework (for JavaScript Jasmine or Chai-Mocha). An acceptance testing framework may be harder to find in obscure programming languages, but there's Cucumber for Rbuy, JavaScript, C++, Java, Python, Specflow for .NET, and support for many other languages. Searching "Cucumber for [X language]" will usually lead you to the choices for that particukar programming language. It's a little tricky because *"the best"* way is to have a *cucumberized* test runner for each seperately. A BDD version of unit tests and and BDD version of protractor tests. Although it's ideal, this may not always be available for yout platform or enviroment, but that's ok. Even if you can't "cucumberize" either set of tests, as  long as you have them you can use the BDD "given-when-then" steps when coding your tests and discussing examples of how the system is used.   
@@ -566,8 +567,26 @@ Testing is difficult, but it becomes fun at some point. Once you are comfortable
 ---
 
 
+<div name="Executing Tests in Parrallel"></div>
+## Part 5: Executing Tests in Parrallel
+TODO
+
+<div name="Protractor Tests in Parrallel"></div>
+### Executing Tests in Parrallel
+TODO
+
+<div name="Karma Tests in Parrallel"></div>
+### Executing Tests in Parrallel
+TODO
+
+<div name="Cucumber Tests in Parrallel"></div>
+### Executing Tests in Parrallel
+TODO
+
+---
+
 <div name="Additional Benefits of UGAT"></div>
-## Part 5: Additional Benefits of UGAT
+## Part 6: Additional Benefits of UGAT
 
 <div name="Better Team Communication and Ubiquitous Language"></div>
 ### Better Team Communication and Ubiquitous Language
@@ -592,7 +611,7 @@ Aslak Hellesoy calls cucumber the "most misunderstood communication tool".
 ---
 
 <div name="Reporting"></div>
-## Part 6: UGAT Reports
+## Part 7: UGAT Reports
 The type of reports we recommend in Triplex Testing are *generated* from the code, specifically from the terst runners. These runners will output information about each test, it's name, all the code it, whether it's passing or failing, etc. into a json object. Many open-source and private report templates have been developed to view and even interact with the json output. The report html and css are just static files that act as a shell or skeleton which you point to your json output file.
 
 
@@ -634,7 +653,7 @@ The leadership, project sponsors, owners, and bosses of you, the lead developer,
 ---
 
 <div name="Sample Reports"></div>
-## Part 7: Sample Reports
+## Part 8: Sample Reports
 
 ### CucumberJS Acceptance Report
 
@@ -693,7 +712,7 @@ etc. for that sprint and future sprints.
 
 ---
 <div name="Deployment & DevOps"></div>
-## Part 8: Deployment & DevOps
+## Part 9: Deployment & DevOps
 
 <div name="Hosting Your Test Reports"></div>
 ###Hosting Your Test Reports
@@ -713,7 +732,7 @@ TODO
 ---
 
 <div name="Official UGAT Projects"></div>
-## Part 9: Official UGAT Projects
+## Part 10: Official UGAT Projects
 
 Projects that are offically recognised as following UGAT methodologies.
 
@@ -751,7 +770,7 @@ TODO
 ---  
 
 <div name="Closing Thoughts"></div>
-## Part 10: Closing Thoughts
+## Part 11: Closing Thoughts
 
 
 <div name="Other Types of Testing"></div>
@@ -832,7 +851,7 @@ If you've been practicing UGAT-style Development for over a year and would like 
 ---
 
 <div name="FAQ"></div>
-## Part 11: Frequently Asked Questions
+## Part 12: Frequently Asked Questions
 
 <div name="Q1"></div>
 ### Q1. Is it wrong to treat low level step definitions like unit tests?
@@ -875,7 +894,7 @@ Yes! Although in this guidebook I focused on JavaScript and AngularJS, the theor
 The regular cucumber.js project will execute feature files that are connected to step defintion files, but once you want to do something interesting in your step definitions you run into problems. Whether you're doing unit tests or ui/e2e tests, there is some setup needed in order for the tests of your AngularJS application to work properly. For this reason we need to use the *cucumberized* versions of either karma and protractor depending on whether you want to implement the step definitions like units tests or UI tests.  
 
 <div name="Works Cited"></div>
-## Part 12: Works Cited 
+## Part 14: Works Cited 
 1. Test Pyramid Article by Martin Fowler: [http://martinfowler.com/bliki/TestPyramid.html](#http://martinfowler.com/bliki/TestPyramid.html)
 
 2. CucumberBDD Podcast - Cucumber Anti-Patterns: [https://cucumber.io/blog/2016/05/09/cucumber-antipatterns](#https://cucumber.io/blog/2016/05/09/cucumber-antipatterns)
@@ -891,7 +910,7 @@ The regular cucumber.js project will execute feature files that are connected to
 ---
 
 <div name="Credits"></div>
-## Part 13: Credits
+## Part 15: Credits
 
 This guide was written by <a href="https://github.com/JimTheMan">Jim Lynch</a>. Although he tried to get other people involved, no one submitted a pull request so for now it's just him. Feel free to help out and have your name added here!
 
