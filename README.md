@@ -18,6 +18,7 @@ Table of Contents
   - [Is This Yet Another Interpretation of "Agile"?](#Is This Yet Another Interpretation of Agile?)
   - [Believe That Perfect Code Over Time Is Attainable](#Believe That Perfect Code Over Time Is Attainable)
   - [Can Testing Show An Absence of Defects?](#Can Testing Show An Absence of Defects)
+  - [Agility Without Confidence is Just Recklessness](#Agility Without Confidence is Just Recklessness)
   - [It Takes Discipline; a Lot of It](#It Takes Discipline; a Lot of It)
   - [How Am I So Excited About Testing?](#How Am I So Excited About Testing?)
   - [Setting Up for Development in AngularJS](#Setting Up for Development in AngularJS) 
@@ -165,7 +166,11 @@ Software is an interesting thing in that it needs to be 100% perfect or else it 
 
  No Amount of Testing Can prove no bugs. Here's a quote from <a href="http://www.istqb.org/">ISTQB</a>, "Testing can shows the presence of defects: Testing can show that defects are present, but cannot prove that there are no defects". Since you could always be "missing one test" that *would* fail because of the bug in the system. If you can show that you have covered all situatinos with tests (a somewhat impossible goal) *and* all of those tests are passing then you can indeed be certain that that the software is absent of bugs. It's sort of a cop-out answer though, since the next question is, "well how do we know if we are missing certain tests?". And really, you can't sometimes, and you just need to retrospectively write the tests to expose the bugs. 
  
- 
+  <div name="Agility Without Confidence is Just Recklessness"></div>
+### Agility Without Confidence is Just Recklessness
+TODO
+
+
  <div name="The Duality of Perfect Code"></div>
 ### The Duality of Perfect Code
 What does it mean for code to be perfect? I like to this of two separate pieces that go into building perfect code. The first is *"building the software right"* which means building software that is free of bugs, doesn't crash, and is sound from a software architecture point of view. This is often testing with unit tests or low level ui tests. As programmers, we often focus *only* on this side which is a mistake if you really want the business to win and the software to be well done. It should be noted though that even 100% coverage on your unit tests and ui tests of all the functional things won't *gaurantee* success. You still need to be creating something that is useful, provides valu to the users, and solves the business problem that it was meant to address in the first place. This is what we mean by *building the right software". This is the central focus of acceptance tests and exectutable cucumber specifications. 
