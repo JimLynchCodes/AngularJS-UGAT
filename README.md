@@ -21,7 +21,8 @@ Table of Contents
   - [Agility Without Confidence is Just Recklessness](#Agility Without Confidence is Just Recklessness)
   - [It Takes Discipline; a Lot of It](#It Takes Discipline; a Lot of It)
   - [How Am I So Excited About Testing?](#How Am I So Excited About Testing?)
-  - [Setting Up for Development in AngularJS](#Setting Up for Development in AngularJS) 
+  - [Setting Up for Development in AngularJS](#Setting Up for Development in AngularJS)
+  - [Automated Scenario Checking](#Automated Scenario Checking)
   - [Scaffolding a Project](#Scaffolding a Project)
  - [Part 2: The Two Core Types of Automated Tests in AngularJS](#The Two Core Types of Automated Tests)
   - [The Duality of Perfect Code](#The Duality of Perfect Code)
@@ -194,6 +195,11 @@ Testing is a means to an end. What I'm really after is a pattern for developing 
 <div name="Setting Up for Development in AngularJS"></div>
 ### Setting Up for Development in AngularJS
 You can develop AngularJS application on a Mac, Windows, or Linux computer, and you pretty much only need two software tools for development: a code editor and a command shell. For a code editor I personally prefer WebStorm, but there are many other great choices including Sublime Text, Visual Studio, Atom, and Notepad++. It really just comes down to preference. You will also need a command shell to run all of your scripts for serving your site in the browser, creating a production build, running all of your various tests, deploying, and anything else you wish to automate. On Mac and Linux machines, the standard terminal or ITerm 2 is fine. On Windows, you can use cmd or your choice on command shell. I would recommend using Bash on Windows. The key benefit with using shell commands is that they are fast and easily translate over to a commands for a server to run as a continuous integration pipeline.
+
+
+<div name="Automated Scenario Checking"></div>
+### Automated Scenario Checking
+I particularly like this phrase because it doesn't not contain the word "testing" which berings to mind all kinds of things that I am not talking about when I say "BDD" or "cucumberizing". What are the Gherkin tests? What are we really getting with this extra BDD testing? The key here are the *Scenarios*. The fancy "Scenarios" that are a keyword in CucumberJS are still just referring to regular scenarios; examples of how the application can be used and how is should respond. At a high level, having scenarios covering all possibilities of how your site or app can be used and what it's supposed to do should give you confidence that your software is working correctly. Of course, you wouldn't want to do this manually, and the scripts we write while doing *automated* scenario checking allow us to build up a collection of these high-level software correctness checks and run them all simultaneously on a whim at any time. Getting more technical, it is the scenarios that are mapped to actual functions usually written in the same language as the source code (called step definitions) that allow you to programatically convert these high-level, natural language descriptions the app being used into code that checks the pieces of the software that have to do with whatever the scenarios are about. The other beautiful thing about natural language scenarios is that non-programmers can understand it, and it gives a these team members a means to understand and influence how the software works without even needing to look at the source code language at all.   
 
 
 <div name="Scaffolding a Project"></div>
