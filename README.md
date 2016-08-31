@@ -8,6 +8,8 @@ A guide for leveraging acceptance, unit, and ui/e2e tests to build valuable soft
 
 Looking for <a href="https://github.com/JimTheMan/Angular-UGAT">Angular-UGAT</a>, <a href="https://github.com/JimTheMan/Java-UGAT/">Java-UGAT</a>, or <a href="https://github.com/JimTheMan/React-UGAT/">React-UGAT</a>?
 
+For a high level, language-agnostic overview of the UGAT testing philosophies check check out this repo: <a href="https://github.com/JimTheMan/UGAT">UGAT Core</a>
+
 Table of Contents
  - [Part 1: Intro to UGAT](#Intro to UGAT)
   - [History of UGAT](#history)
