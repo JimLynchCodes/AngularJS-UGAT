@@ -2,7 +2,7 @@
 
 ## "Ultimate Guidebook for Automated Testing" 
 
-A guide for leveraging acceptance, unit, and ui tests to build valuable software and increase developer accuracy, speed, confidence, and serenity. 
+A guide for leveraging acceptance, unit, and ui/e2e tests to build valuable software and increase developer accuracy, speed, confidence, and serenity. 
  
 ### For AngularJS 1.X Projects.
 
@@ -115,13 +115,12 @@ Table of Contents
   - [Q6. Most Cucumber / BDD examples have a root level "features" folder. Why don't you follow this convention?](#Q6)
   - [Q7. My boss says we don't have enough time for testing. What should I do?](#Q7)
   - [Q8. Q8. Can't we just manually test everything?](#Q8)
-  - [Q9. Will the theory of Triplex Testing work for [insert favorite platform here]?](#Q9)
+  - [Q9. Will the theory of Triplex Testing work for \[insertfavorite platform here\]?](#Q9)
   - [Q10. Why can't we use regular Cucumber.js?](#Q10)
  - [Part 14: Works Cited](#WorksCited)
  - [Part 15: Credits](#Credits)
 
 ---
-
 
 <div name="IntroToUGAT"></div>
 ## Part 1: Intro to UGAT
