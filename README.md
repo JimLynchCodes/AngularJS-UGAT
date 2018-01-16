@@ -2,7 +2,7 @@
 
 ## "Ultimate Guidebook for Automated Testing" 
 
-A guide for leveraging acceptance, unit, and ui/e2e tests to build valuable software and increase developer accuracy, speed, confidence, and serenity. 
+A guide for leveraging acceptance, unit, and ui tests to build valuable software and increase developer accuracy, speed, confidence, and serenity. 
  
 ### For AngularJS 1.X Projects.
 
