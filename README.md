@@ -11,7 +11,7 @@ Looking for <a href="https://github.com/JimTheMan/Angular-UGAT">Angular-UGAT</a>
 For a high level, language-agnostic overview of the UGAT testing philosophies check check out this repo: <a href="https://github.com/JimTheMan/UGAT">UGAT Core</a>
 
 Table of Contents
- - [Part 1: Intro to UGAT](#Intro to UGAT)
+ - [Part 1: Intro to UGAT](#Intro\ to\ UGAT)
   - [History of UGAT](#history)
   - [Purpose of UGAT](#Purpose of UGAT)
   - [Contributing to UGAT](#Contributing to UGAT)
